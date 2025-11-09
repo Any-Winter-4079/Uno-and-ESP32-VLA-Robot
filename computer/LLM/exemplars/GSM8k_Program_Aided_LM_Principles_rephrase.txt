@@ -1,0 +1,48 @@
+
+
+With the following rules:
+1) The function should be named solution.
+2) The function should not take any arguments.
+3) The function should return a result variable.
+4) All variables used in the solution should be defined within the function.
+
+First rephrase, then answer, the following problem:
+Mary had 5 apples. The next morning, she ate 2 apples. Then, in the afternoon, she bought as many apples as she had after eating those apples in the morning. How many apples did she end up with?
+
+Problem rephrased:
+Mary initially possessed 5 apples. She consumed 2 of these apples in the morning. Later in the afternoon, she purchased the same number of apples as she had left after eating the 2 in the morning. The question asks for the total number of apples Mary had after her afternoon shopping.
+
+Answer:
+def solution():
+    apple_initial = 5
+    apple_eaten = 2
+    apple_left = apple_initial - apple_eaten
+    apple_bought = apple_left
+    result = apple_left + apple_bought
+    return result
+
+First rephrase, then answer, the following problem:
+Mario and Luigi together had 10 years of experience in soccer. Luigi had 3 more than Mario. How many did Mario have?
+
+Problem rephrased:
+Mario and Luigi together have accumulated 10 years of soccer experience. Luigi has 3 more years of experience than Mario. The question asks for the number of years of experience Mario has.
+
+Answer:
+def solution():
+    mario_experience = (10 - 3)/2
+    result = mario_experience
+    return result
+
+First rephrase, then answer, the following problem:
+The planet Goob completes one revolution after every 2 weeks. How many hours will it take for it to complete half a revolution?
+
+Problem rephrased:
+The planet Goob orbits completely around its star in 2 weeks. Half a revolution would mean that the planet has reached the halfway point in its orbit. The question asks for the time it takes for the planet to complete half a revolution.
+
+Answer:
+def solution():
+    one_revolution_week = 2
+    half_revolution_week = one_revolution_week/2
+    half_revolution_hour = half_revolution_week * 7 * 24
+    result = half_revolution_hour
+    return result

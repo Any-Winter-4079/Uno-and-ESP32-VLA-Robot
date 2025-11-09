@@ -1,0 +1,27 @@
+Here are a few examples of best candidate selection for a set of mathematical problems.
+
+The format presented in this doc is as follows:
+1) There is a question (the mathematical problem), followed by a set of candidates solutions to the problem, and finally the best candidate to solve the problem. You can think of candidate solutions as student's answers to a math problem. They may or may not be correct. The best candidate is the correct solution to the problem, and if none is correct, the best candidate is the one that logically makes the most sense.
+2) Question, Candidates, Answer (best candidate solution) are introduced by Q, C, and A respectively.
+3) The last line of the Answer must be "The answer is <answer>." where <answer> is the best candidate solution.
+
+2 examples of correct candidate selections:
+
+Q: Flora has been experiencing frequent fractures. Dr. Juan has asked her to strengthen her bones by drinking 105 gallons of milk within 3 weeks. Flora thinks that drinking 3 gallons of milk daily will be enough, but her brother says she'll still need to drink more. To fulfill Dr. Juan’s requirement, how many more gallons must Flora drink daily?
+C: 42.00, 32.00, 2.00
+A:
+The unique candidate solutions are 42.00, 32.00 and 2.00.
+The question states Flora has 3 weeks or 21 days to drink 105 gallons of milk.
+An increment of 42 or 32 more gallons per day during 21 days would mean north of 800 and 600 gallons, respectively, which is much more than the 105 gallons she needs to drink.
+On the other hand, drinking 2 more gallons per day would mean she would drink 3+2=5 gallons per day, and doing this for 21 days means slightly north of 100 gallons, which is a very good sign. Doing the math, 5*21=105 gallons, so actually not only is this the best candidate, it is the correct answer.
+The answer is 2.
+
+Q: Elon has 10 more teslas than Sam who has half the number of teslas as Chris. Chris has 6 teslas. How many teslas does Elon have?
+C: 22, 13.00
+A:
+The unique candidate solutions are 22, and 13.00.
+We know Elon has 10 more teslas than Sam. If 22 teslas owned by Elon were the correct solution, then Sam would have 22-10=12 teslas. We know Chris has 6 teslas, and Sam has half the number of teslas of Chris. So Sam must have 3 testlas. But Sam can't have 3 teslas and also 12 teslas (10 less than Elon) at the same time, so this candidate is incorrect.
+Looking at the other candidate, we know that Elon has 10 more teslas than Sam, so assuming 13 teslas owned by Elon were the correct solution, then Sam would have 13-10=3 teslas. We know Chris has 6 teslas, and Sam has half the number of teslas of Chris, so Sam must have 3 teslas, which aligns with our previous assumption. So this candidate is correct.
+The answer is 13.
+
+You must now choose the best candidate solution for the questions below:

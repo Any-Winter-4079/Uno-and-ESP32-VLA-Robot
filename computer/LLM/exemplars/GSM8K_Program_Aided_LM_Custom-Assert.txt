@@ -1,0 +1,111 @@
+Task:
+    - Solve the given problem(s) in a careful, formal manner.
+
+Rules:
+    - The function to solve the problem(s) should be written in Python and be named solution.
+    - The function should not take any arguments.
+    - The function should return a result variable placed at the end of the function.
+    - All variables used in the solution should be defined within the function.
+
+Strategy:
+    - Break Down the Problem: Divide the problem into smaller, manageable parts or steps, addressing each part with clear, focused logic.
+    - Validate Logic with Examples: Before coding, manually work through examples or scenarios to ensure your understanding and approach are correct.
+    - Independent Validation for Assertions: Where possible, base assertions on calculations or checks that are independent of the solution's logic, such as validating results against known constraints or using a different method to estimate the expected range of results.
+
+Common Mistakes in Problem Solving and What to Do:
+    - Mistake: Missing or Overlooking Problem Elements
+    - What to Do: Carefully read the problem statement to identify all elements and their relationships. Create a checklist of all identified elements and ensure each is addressed in the solution.
+    - Mistake: Sticking to the first solution approach without considering others.
+    - What to Do: Brainstorm different methods to solve the problem before deciding on the most efficient or simplest solution. Comparing multiple approaches can uncover hidden complexities or simpler paths.
+    - Mistake: Misinterpreting Scenario or Requirements
+    - What to Do: Paraphrase the problem and its requirements in your own words. Validate your understanding against the problem statement.
+    - Mistake: Incorrect Unit Conversions or Handling
+    - What to Do: Explicitly note each quantity's units and ensure consistent units are used throughout calculations.
+    - Mistake: Combining Variables Improperly
+    - What to Do: Define separate variables for distinct elements, even if they play similar roles in the problem.
+
+Common Mistakes in Assertions and What to Do:
+    - Mistake: The assertion directly replicates the calculation steps of the solution.
+    - What to Do: Use assertions to check outcomes against independent expectations or constraints, not to mirror the solution's process.
+    - Mistake: Assertions do not address critical conditions outlined in the problem.
+    - What to Do: For each problem statement, identify invariants or essential conditions and ensure at least one assertion verifies each.
+    - Mistake: Assertions validate the result based on an assumption that deviates from the problem's constraints or real-world logic.
+    - What to Do: Double-check each assertion against the problem statement to ensure it's grounded in the problem's reality, not assumed logic.
+
+The questions are as follows:
+
+Q: Mario and Luigi together had 10 years of experience in soccer. Luigi had 3 more than Mario. How many did Mario have?
+A: 
+def solution():
+    """
+    Problem Breakdown and Strategy:
+    - Total experience together: 10 years
+    - Luigi's experience is 3 years more than Mario's.
+    - Goal: Determine Mario's years of experience.
+    
+    Solution Steps:
+    1. Let Mario's experience be x years.
+    2. Then, Luigi's experience is x + 3 years.
+    3. Given that together they have 10 years of experience, set up the equation: x + (x + 3) = 10
+    4. Solve the equation for x to find Mario's years of experience.
+    
+    Common Mistakes and Corrections:
+    - Ensure the equation correctly represents the problem statement.
+    - Solve the equation accurately, avoiding arithmetic errors.
+    - Use assertions to validate the relationship between Mario's and Luigi's experiences relative to the total.
+    """
+
+    # Total years of experience together
+    total_experience = 10
+    
+    # Step 3: Set up and solve the equation
+    # x + (x + 3) = 10
+    # 2x + 3 = 10
+    # 2x = 7
+    mario_experience = (total_experience - 3) / 2
+
+    # Calculate Luigi's experience based on Mario's
+    luigi_experience = mario_experience + 3
+
+    # Assertions for independent validation
+    assert mario_experience + luigi_experience == total_experience, "Total experience does not match"
+    assert luigi_experience == mario_experience + 3, "Luigi's experience is not 3 years more than Mario's"
+
+    result = mario_experience
+    return int(result)
+
+Q: The planet Goob completes one revolution after every 2 weeks. How many hours will it take for it to complete half a revolution?
+A: 
+def solution():
+    """
+    Problem Breakdown and Strategy:
+    - Full revolution time: 2 weeks
+    - Goal: Calculate time in hours for half a revolution
+    
+    Solution Steps:
+    1. Convert the full revolution time from weeks to hours.
+    2. Calculate the time for half a revolution by dividing the total hours by 2.
+    
+    Common Mistakes and Corrections:
+    - Ensure accurate unit conversion from weeks to hours.
+    - Precisely calculate half the revolution time, avoiding rounding errors.
+    - Use assertions to validate the conversion process and final result.
+    """
+
+    # Define key elements
+    weeks_per_revolution = 2
+    days_per_week = 7
+    hours_per_day = 24
+
+    # Step 1: Convert the full revolution time from weeks to hours
+    hours_per_revolution = weeks_per_revolution * days_per_week * hours_per_day
+
+    # Step 2: Calculate the time for half a revolution
+    half_revolution_hours = hours_per_revolution / 2
+
+    # Assertions for independent validation
+    assert hours_per_revolution == weeks_per_revolution * days_per_week * hours_per_day, "Incorrect conversion from weeks to hours"
+    assert half_revolution_hours == hours_per_revolution / 2, "Incorrect calculation for half a revolution"
+
+    result = half_revolution_hours
+    return result

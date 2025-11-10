@@ -19,11 +19,10 @@
 
 ## Demos
 
-
 <div align="center">
 
-|   Production demo 1: run `production.py` to reproduce   |   Production demo 2: run `production.py` to reproduce   | Test demo 1 (audio): run `audio/3_get_audio_` `and_run_speech_` `to_text.py` to reproduce | Test demo 2 (motors): run `move_motors.ino` sketch to reproduce | Test demo 3 (servos): `run move_servos.ino` sketch to reproduce |
+|   Production demo 1: run `production.py` to reproduce   |   Production demo 2: run `production.py` to reproduce   | Test demo 1 (audio): run `audio/3_get_audio` `_and_run_speech` `_to_text.py` to reproduce | Test demo 2 (motors): run `move_motors.ino` sketch to reproduce | Test demo 3 (servos): `run move_servos.ino` sketch to reproduce |
 | :-----------------------------------------------------: | :-----------------------------------------------------: | :---------------------------------------------------------------------------------------: | :-------------------------------------------------------------: | :-------------------------------------------------------------: |
-|  |  |              <video src="https://github.com/user-attachments/assets/4bf0b283-7791-40a5-9053-576bc7651649"></video>               |    <video src="https://github.com/user-attachments/assets/d75e50bf-0305-4aec-9e65-48008144198f"></video/>     |     <video src="https://github.com/user-attachments/assets/2021902d-ad89-4211-b0d0-7f4c2e0c3f04"></video>     |
+|  |  |              <video src="https://github.com/user-attachments/assets/ac0bfaeb-4b39-4dc6-85b0-21153741062f"></video>               |    <video src="https://github.com/user-attachments/assets/d75e50bf-0305-4aec-9e65-48008144198f"></video/>     |     <video src="https://github.com/user-attachments/assets/2021902d-ad89-4211-b0d0-7f4c2e0c3f04"></video>     |
 
 </div>

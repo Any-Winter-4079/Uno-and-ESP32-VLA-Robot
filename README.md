@@ -16,3 +16,13 @@
 - [Audio capture and playback](guides/06_audio_capture_and_playback.md): How to handle thinking,
   - Contains communication diagram between KY-037, INMP441, ESP32-WROVER, and computer for audio capture, and computer, ESP32-WROVER, MAX98357A and speaker for audio playback.
   - The vision-language model does not take audio nor generate audio (directly). Whisper is used for Speech-to-Text and Coqui for Text-to-Speech, but feel free to add an end-to-end model (only thing is, make sure not all output is verbized, as there is internal thinking, body control and function call commands not meant to be spoken).
+
+## Demos
+
+<div align="center">
+
+|   Production demo 1: run `production.py` to reproduce   |   Production demo 2: run `production.py` to reproduce   | Test demo 1 (audio): run `audio/3_get_audio_` `and_run_speech_` `to_text.py` to reproduce | Test demo 2 (motors): run `move_motors.ino` sketch to reproduce | Test demo 3 (servos): `run move_servos.ino` sketch to reproduce |
+| :-----------------------------------------------------: | :-----------------------------------------------------: | :---------------------------------------------------------------------------------------: | :-------------------------------------------------------------: | :-------------------------------------------------------------: |
+| <video src="videos/compressed/move_servos.mp4"></video> | <video src="videos/compressed/move_servos.mp4"></video> |              <video src="videos/compressed/listen_and_run_stt.mp4"></video>               |    <video src="videos/compressed/move_motors.mp4"></video/>     |     <video src="videos/compressed/move_servos.mp4"></video>     |
+
+</div>

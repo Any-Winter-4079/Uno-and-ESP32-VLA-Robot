@@ -18,7 +18,6 @@ objp = np.zeros((CHESSBOARD_SIZE[0]*CHESSBOARD_SIZE[1], 3), np.float32)
 objp[:, :2] = np.mgrid[0:CHESSBOARD_SIZE[0], 0:CHESSBOARD_SIZE[1]].T.reshape(-1, 2) * SQUARE_SIZE
 
 # lists for calibration points
-#objpoints = []                     # 3D points in real-world space
 imgpoints_left = []                 # 2D points in left image plane
 imgpoints_right = []                # 2D points in right image plane
 
@@ -86,17 +85,14 @@ def process_image_pairs():
             cornersR = cv2.cornerSubPix(grayR, cornersR, CORNER_SUBPIX_WINDOW_SIZE, (-1, -1), criteria)
 
             # store calibration points
-            #objpoints.append(objp.copy())
             imgpoints_left.append(cornersL)
             imgpoints_right.append(cornersR)
 
-            # visualize corners
+            # obtain, display, and store corners
             imgL_drawn = cv2.drawChessboardCorners(imgL.copy(), CHESSBOARD_SIZE, cornersL, retL)
             imgR_drawn = cv2.drawChessboardCorners(imgR.copy(), CHESSBOARD_SIZE, cornersR, retR)
-            
-            show_side_by_side(imgL_drawn, imgR_drawn, "Chessboard Corners", 500)
-            save_side_by_side(imgL_drawn, imgR_drawn, f"{timestamp_left}_side_by_side.jpg", 
-                            side_by_side_images_path)
+            show_side_by_side(imgL_drawn, imgR_drawn, "Chessboard Corners")
+            save_side_by_side(imgL_drawn, imgR_drawn, f"{timestamp_left}_side_by_side.jpg", side_by_side_images_path)
         else:
             print(f"Chessboard corners not found for {img_left} and {img_right}")
 

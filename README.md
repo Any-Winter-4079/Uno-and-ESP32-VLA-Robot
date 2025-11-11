@@ -17,12 +17,30 @@
   - Contains communication diagram between KY-037, INMP441, ESP32-WROVER, and computer for audio capture, and computer, ESP32-WROVER, MAX98357A and speaker for audio playback.
   - The vision-language model does not take audio nor generate audio (directly). Whisper is used for Speech-to-Text and Coqui for Text-to-Speech, but feel free to add an end-to-end model (only thing is, make sure not all output is verbized, as there is internal thinking, body control and function call commands not meant to be spoken).
 
+## QuickStart
+
+- Buy the electronic components, build/buy the chassis and eyes, and connect the components.
+- Flash `esp32/cam/*-production.ino` to the 2x ESP32-CAM, calibrate the cameras (check `/calibration` [README](computer/calibration/README.md) and [guide](guides/05_esp32_cam_calibration_distortion_correction_and_rectification.md)), and save the rectification maps (check `/undistortion_and_rectification` [README](computer/undistortion_and_rectification/README.md) and [guide](guides/05_esp32_cam_calibration_distortion_correction_and_rectification.md)). Make sure the computer and the 2x ESP32-CAM are connected to the same network and check images are available on a browser from the computer (making an HTTP GET request to the ESP32-CAM endpoint).
+- Flash the `arduino/test/move_motors.ino` sketch to the Arduino Uno and make sure wheels can move.
+- Flash the `arduino/test/move_servos.ino` sketch to the Arduino Uno and make sure eyes can move.
+- Flash `esp32/wrover/production.ino` to the ESP32-WROVER and `arduino/production.ino` to the Arduino Uno and make sure wheels and eyes can move upon command from the computer (sent to the ESP32-WROVER and forwaded to the Arduino Uno).
+
+## Connection QuickStart
+
+NOTE: `/handleCommand` should read `/command`.
+
+<div align="left">
+    <img width=400" alt="Servos and cameras communication summary" src="./images/original/servos-and-cameras-communication-summary.png">
+    <img width="500" alt="Motor communication summary" src="./images/original/motors-communication-summary.png">
+    <img width="500" alt="Audio communication summary" src="./images/original/audio-communication-summary.png">
+</div>
+
 ## Demos
 
 <div align="center">
 
-|   Production demo 1: run `production.py` to reproduce   |   Production demo 2: run `production.py` to reproduce   | Test demo 1 (audio): run `audio/3_get_audio` `_and_run_speech` `_to_text.py` to reproduce | Test demo 2 (motors): run `move_motors.ino` sketch to reproduce | Test demo 3 (servos): `run move_servos.ino` sketch to reproduce |
-| :-----------------------------------------------------: | :-----------------------------------------------------: | :---------------------------------------------------------------------------------------: | :-------------------------------------------------------------: | :-------------------------------------------------------------: |
-|  |  |              <video src="https://github.com/user-attachments/assets/ac0bfaeb-4b39-4dc6-85b0-21153741062f"></video>               |    <video src="https://github.com/user-attachments/assets/d75e50bf-0305-4aec-9e65-48008144198f"></video/>     |     <video src="https://github.com/user-attachments/assets/2021902d-ad89-4211-b0d0-7f4c2e0c3f04"></video>     |
+| Production demo 1: run `production.py` script | Production demo 2: run `production.py` script |          Test demo 1 (audio): run `audio/3_get_audio` `_and_run_speech` `_to_text.py` script          |                           Test demo 2 (motors): run `move_motors.ino` sketch                           |                          Test demo 3 (servos): run `move_servos.ino` sketch                           |
+| :-------------------------------------------: | :-------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
+|                                               |                                               | <video src="https://github.com/user-attachments/assets/ac0bfaeb-4b39-4dc6-85b0-21153741062f"></video> | <video src="https://github.com/user-attachments/assets/d75e50bf-0305-4aec-9e65-48008144198f"></video/> | <video src="https://github.com/user-attachments/assets/2021902d-ad89-4211-b0d0-7f4c2e0c3f04"></video> |
 
 </div>

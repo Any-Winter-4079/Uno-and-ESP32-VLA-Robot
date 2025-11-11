@@ -1,3 +1,13 @@
+## Demos
+
+<div align="center">
+
+| Production demo 1: run `production.py` script | Production demo 2: run `production.py` script |          Test demo 1 (audio): run `audio/3_get_audio` `_and_run_speech` `_to_text.py` script          |                           Test demo 2 (motors): run `move_motors.ino` sketch                           |                          Test demo 3 (servos): run `move_servos.ino` sketch                           |
+| :-------------------------------------------: | :-------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
+|                                               |                                               | <video src="https://github.com/user-attachments/assets/ac0bfaeb-4b39-4dc6-85b0-21153741062f"></video> | <video src="https://github.com/user-attachments/assets/d75e50bf-0305-4aec-9e65-48008144198f"></video/> | <video src="https://github.com/user-attachments/assets/2021902d-ad89-4211-b0d0-7f4c2e0c3f04"></video> |
+
+</div>
+
 ## How to Read this Project
 
 - [Connections](guides/00_connections.md): Wiring (Fritzing) - how cables connect together
@@ -33,14 +43,4 @@ NOTE: `/handleCommand` should read `/command`.
     <img width=400" alt="Servos and cameras communication summary" src="./images/original/servos-and-cameras-communication-summary.png">
     <img width="500" alt="Motor communication summary" src="./images/original/motors-communication-summary.png">
     <img width="500" alt="Audio communication summary" src="./images/original/audio-communication-summary.png">
-</div>
-
-## Demos
-
-<div align="center">
-
-| Production demo 1: run `production.py` script | Production demo 2: run `production.py` script |          Test demo 1 (audio): run `audio/3_get_audio` `_and_run_speech` `_to_text.py` script          |                           Test demo 2 (motors): run `move_motors.ino` sketch                           |                          Test demo 3 (servos): run `move_servos.ino` sketch                           |
-| :-------------------------------------------: | :-------------------------------------------: | :---------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
-|                                               |                                               | <video src="https://github.com/user-attachments/assets/ac0bfaeb-4b39-4dc6-85b0-21153741062f"></video> | <video src="https://github.com/user-attachments/assets/d75e50bf-0305-4aec-9e65-48008144198f"></video/> | <video src="https://github.com/user-attachments/assets/2021902d-ad89-4211-b0d0-7f4c2e0c3f04"></video> |
-
 </div>

@@ -7,18 +7,25 @@ venv/
 # Ignore raw videos
 videos/raw/
 
+# Ignore vector database
+computer/LLM/chromadb/
+
 # Ignore llama.cpp
 computer/LLM/llama.cpp/
 
 # Ignore production_database
 computer/depth_and_face_recognition/production_database/
+computer/LLM/production_database/
+
 # Ignore yolov8n.pt
 computer/depth_and_face_recognition/yolov8n.pt
+computer/LLM/yolov8n.pt
 
 # Ignore face_recognition databases
 computer/face_recognition/1_database/
 computer/face_recognition/2_database/
 computer/face_recognition/production_database/
+
 # Ignore face_recognition test images
 computer/face_recognition/1_test_images/
 computer/face_recognition/2_test_images/
@@ -28,7 +35,9 @@ computer/LMM/.env
 
 # Ignore recorded_audio
 computer/audio/recorded_audio/
+
 # Ignore cloning_voice
 computer/audio/cloning_voice/
+
 # Ignore voice_for_stt
 computer/audio/voice_for_stt/

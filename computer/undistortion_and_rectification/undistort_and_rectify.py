@@ -32,6 +32,9 @@ T = np.load('../calibration/parameters/translation_vector.npy')
 
 RECTIFICATION_FLAGS = cv2.CALIB_ZERO_DISPARITY # use zero disparity setting for better results with parallel cameras
 
+#############################################
+# Helper 1: Initialize stereo rectification #
+#############################################
 def initialize_stereo_rectification(image_size):
     # calculate rectification transforms
     # Q is the disparity-to-depth mapping matrix
@@ -66,6 +69,9 @@ def initialize_stereo_rectification(image_size):
     
     return stereoMapL, stereoMapR, Q
 
+##############################
+# Helper 2: Save stereo maps #
+##############################
 def save_stereo_maps(stereoMapL, stereoMapR, Q):
     # set up output dir
     makedirs(RECTIFICATION_MAPS_SAVE_PATH, exist_ok=True)
@@ -79,6 +85,9 @@ def save_stereo_maps(stereoMapL, stereoMapR, Q):
     
     np.save(join(RECTIFICATION_MAPS_SAVE_PATH, 'Q.npy'), Q)
 
+############################
+# Helper 3: Process images #
+############################
 def process_images():
     # find and sort all input images
     left_images = sorted(glob.glob(join(LEFT_EYE_IMAGES_DIR, '*.jpg')))
@@ -119,6 +128,9 @@ def process_images():
 
         print(f"Processed and saved {left_image_path} and {right_image_path}")
 
+###########################
+# Main: Run rectification #
+###########################
 def main():
     process_images()
     print(f"Rectified images saved to {IMAGES_SAVE_PATH}")

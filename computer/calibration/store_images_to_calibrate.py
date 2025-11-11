@@ -36,6 +36,9 @@ SAVE_PATH_LEFT = "./images/left_eye"
 MAX_CAPTURES = 100                  # at most, capture these many pairs (then choose whether to store each or not)
 SECONDS_BETWEEN_IMAGE_CAPTURES = 3  # time to press 's' (before a new pair of frames is requested)
 
+##################################
+# Helper 1: Update camera config #
+##################################
 def update_camera_config(esp32_config_url, jpeg_quality, frame_size):
     data = {'jpeg_quality': jpeg_quality, 'frame_size': frame_size}
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
@@ -47,6 +50,9 @@ def update_camera_config(esp32_config_url, jpeg_quality, frame_size):
         print(f"Error sending update camera config request to ESP32-CAM: {e}")
         return False
 
+#########################
+# Helper 2: Fetch image #
+#########################
 def fetch_image(url, queue):
     try:
         response = urllib.request.urlopen(url)
@@ -57,6 +63,9 @@ def fetch_image(url, queue):
         print(f"Error fetching frame from ESP32-CAM at {url}: {e}")
         queue.append(None)
 
+###################################
+# Helper 3: Capture stereo images #
+###################################
 def capture_stereo_images(url_left, url_right, save_path_left, save_path_right):
     queue_left, queue_right = [], []
 
@@ -94,6 +103,9 @@ def capture_stereo_images(url_left, url_right, save_path_left, save_path_right):
         return True
     return False
 
+##########################
+# Main: Run capture loop #
+##########################
 def main():
     # set up output dirs
     makedirs(SAVE_PATH_LEFT, exist_ok=True)

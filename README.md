@@ -8,6 +8,12 @@
 
 </div>
 
+NOTE:
+
+- Test demos check if a component works with some pre-defined behavior (e.g., move motors forward for 2 seconds, backward for 2 seconds, turn left for 3 seconds, turn right for 3 seconds).
+
+- Production demos use the full pipeline, and commands come from the fine-tuned vision-language(-action) model.
+
 ## How to Read this Project
 
 - [Connections](guides/00_connections.md): Wiring (Fritzing) - how cables connect together

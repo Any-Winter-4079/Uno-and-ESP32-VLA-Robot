@@ -21,11 +21,17 @@ objp[:, :2] = np.mgrid[0:CHESSBOARD_SIZE[0], 0:CHESSBOARD_SIZE[1]].T.reshape(-1,
 imgpoints_left = []                 # 2D points in left image plane
 imgpoints_right = []                # 2D points in right image plane
 
+###############################
+# Helper 1: Extract timestamp #
+###############################
 def extract_timestamp(filename):
     # filename format: image_YYYYMMDD_HHMMSS.jpg
     match = re.search(r'(\d{8}_\d{6})', filename)
     return match.group(0) if match else None
 
+######################################
+# Helper 2: Show images side-by-side #
+######################################
 def show_side_by_side(img1, img2, window_name='Side-by-side', display_time=500):
     # concatenate images side by side
     combined_image = np.concatenate((img1, img2), axis=1)
@@ -34,12 +40,18 @@ def show_side_by_side(img1, img2, window_name='Side-by-side', display_time=500):
     cv2.waitKey(display_time)
     cv2.destroyAllWindows()
 
+######################################
+# Helper 3: Save images side-by-side #
+######################################
 def save_side_by_side(img1, img2, filename, output_dir):
     # concatenate images side by side
     combined_image = np.concatenate((img1, img2), axis=1)
     # write to file
     cv2.imwrite(os.path.join(output_dir, filename), combined_image)
 
+#################################
+# Helper 4: Process image pairs #
+#################################
 def process_image_pairs():
     # load images
     images_left = glob.glob('images/left_eye/*.jpg')
@@ -109,6 +121,9 @@ def process_image_pairs():
 
     return grayL.shape[::-1], objpoints_reshaped, imgpoints_left_formatted, imgpoints_right_formatted
 
+###############################
+# Helper 5: Calibrate cameras #
+###############################
 def calibrate_cameras(img_size, objpoints, imgpoints_left, imgpoints_right):
     # img_size: (width, height)
     # objpoints: 3D calibration points
@@ -204,6 +219,9 @@ def calibrate_cameras(img_size, objpoints, imgpoints_left, imgpoints_right):
 
     return calibration
 
+###################################################
+# Helper 6: Save calibration parameters (to disk) #
+###################################################
 def save_calibration_parameters(calibration):
     # set up output dir
     os.makedirs('parameters', exist_ok=True)
@@ -221,6 +239,9 @@ def save_calibration_parameters(calibration):
     np.save('parameters/essential_matrix.npy', calibration['E'])
     np.save('parameters/fundamental_matrix.npy', calibration['F'])
 
+#########################
+# Main: Run calibration #
+#########################
 def main():
     # process image pairs
     img_size, objpoints, imgpoints_left, imgpoints_right = process_image_pairs()

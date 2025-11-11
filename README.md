@@ -50,3 +50,23 @@ NOTE: `/handleCommand` should read `/command`.
     <img width="500" alt="Motor communication summary" src="./images/original/motors-communication-summary.png">
     <img width="500" alt="Audio communication summary" src="./images/original/audio-communication-summary.png">
 </div>
+
+## What changes would I make to current language models?
+
+The changes I would make to this robot (which is a proxy for a very early prototype of a system with physical and virtual output interfaces running 24/7), are:
+
+First: Temporally align:
+
+- vision input
+- audio input
+- internal thinking output
+- body control output (let's call it, output to perform actions on **physical interfaces**)
+- function calls output (let's call it, output to perform actions on **virtual interfaces**)
+
+This way: vision and audio are updated periodically, and the model can stop its thinking or acting mid-way, depending on the new input captured from the world.
+
+The reason is because variable token-length output is a problem. Systems should be periodically updated with world input, and we should not delay this for variable lengths due to the model still beeing thinking, calling a function, etc. You cannot delay feeding the new world state to the model because it is still rambling with internal thinking, or calling a funtion, but you should also **not** supress thinking altogether (and say generate body control commands directly, which would probably lead to worse performance).
+
+Second: Although this is of lower importance, I would prefer `input` + `output` to `user` + `assistant`. A user can always be part of the input (e.g., as part of an audio, text, etc. input interface), but asynchronous users is much better, in my opinion, than user/assistant. At some point, humans will be a bottleneck, and models should seek to **autonomously** solve problems, not constantly defer to users. So, because users may come in with feedback at unspecified times, `user` input should be asynchronous to model execution (in other words, let model run 24/7, trying to achieve a goal, and let user come in asynchronously). And while it may not make sense for many to run models this way (for now), the change from `user` + `assistant` to `input` + `output` is harmless, and will better align with future use of these models (and robotic applications).
+
+Third: Finally, having each weight tied to every task is probably not going to work. If you move a weight opposite to the gradient to improve performance in one task, you have **no idea** how that will affect performance on another task. That is (to me) conceptually wrong. So, either you sample from past knowledge to keep refreshing what you know (and try to move the weight to improve on one task, while not hurting much the others), which is possibly very expensive (although with what frequency existing knowledge would need to be refreshed is unknown to me), or you need to persist knowledge that does not degrade because you learn something else (e.g., you don't forget how to ride a bike even if for 5 years you have not touched a bike and have learnt tons of other things). While Mixture-of-Experts is, probably, closest to this at the time, I would prefer dynamically loading (or routing to) an unbounded number of experts, because if the model is initially taught to perform well (and route between) N tasks, it may not scale well if later on faced with the challenge of learning M >> N tasks.

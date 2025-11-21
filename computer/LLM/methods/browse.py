@@ -94,8 +94,10 @@ def fetch_url_content_with_jina(url, timeout=15):
     except requests.exceptions.Timeout:
         return None, f"Fetch timeout (timeout={timeout} seconds). Please check your url or set a longer timeout argument if you need to."
     except Exception as e:
+        # convert error to string
+        e = str(e)
         # trim characters
-        e = e[10_000:] + "..." if len(e) > 10_000 else e
+        e = e[:MAX_CHUNK_CHARS] + "..." if len(e) > MAX_CHUNK_CHARS else e
         return None, e
 
 ##############
@@ -134,7 +136,10 @@ def browse_web(browse_query_text, max_results=3, timeout=20):
             "error": f"Fetch timeout (timeout={timeout} seconds). Please check your query or set a longer timeout argument if you need to."
         }
     except Exception as e:
-        e = e[10_000:] + "..." if len(e) > 10_000 else e
+        # convert error to string
+        e = str(e)
+        # trim characters
+        e = e[:MAX_CHUNK_CHARS] + "..." if len(e) > MAX_CHUNK_CHARS else e
         return {
             "success": None,
             "error": e
@@ -189,7 +194,10 @@ def get_next_chunk(url, start_char_num, end_char_num, timeout=15):
         }
 
     except Exception as e:
-        e = e[10_000:] + "..." if len(e) > 10_000 else e
+        # convert error to string
+        e = str(e)
+        # trim characters
+        e = e[:MAX_CHUNK_CHARS] + "..." if len(e) > MAX_CHUNK_CHARS else e
         return {
             "success": None,
             "error": e

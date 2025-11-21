@@ -44,10 +44,10 @@ def update_camera_config(esp32_config_url, jpeg_quality, frame_size):
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
     try:
         response = requests.post(esp32_config_url, data=data, headers=headers, timeout=CONFIG_TIMEOUT)
-        print(f"Response from ESP32-CAM: {response.text}")
+        print(f"update_camera_config: response from ESP32-CAM: {response.text}")
         return True
     except Exception as e:
-        print(f"Error sending update camera config request to ESP32-CAM: {e}")
+        print(f"update_camera_config: error sending update camera config request to ESP32-CAM: {e}")
         return False
 
 #########################
@@ -60,7 +60,7 @@ def fetch_image(url, queue):
         image = cv2.imdecode(image_numpy, cv2.IMREAD_COLOR)
         queue.append(image)
     except Exception as e:
-        print(f"Error fetching frame from ESP32-CAM at {url}: {e}")
+        print(f"fetch_image: error fetching frame from ESP32-CAM at {url}: {e}")
         queue.append(None)
 
 ###################################
@@ -88,7 +88,7 @@ def capture_stereo_images(url_left, url_right, save_path_left, save_path_right):
         combined_image = cv2.hconcat([image_right, image_left])
         cv2.imshow("Pair preview (press 's' to store)", combined_image)
     else:
-        print("Error: failed to retrieve one or both camera images")
+        print("capture_stereo_images: failed to retrieve one or both camera images")
     
     key = cv2.waitKey(SECONDS_BETWEEN_IMAGE_CAPTURES * 1000)
 
@@ -99,7 +99,7 @@ def capture_stereo_images(url_left, url_right, save_path_left, save_path_right):
         save_filename_right = join(save_path_right, f"image_{timestamp}.jpg")
         cv2.imwrite(save_filename_left, image_left)
         cv2.imwrite(save_filename_right, image_right)
-        print(f"Saved {save_filename_left} and {save_filename_right}")
+        print(f"capture_stereo_images: saved {save_filename_left} and {save_filename_right}")
         return True
     return False
 
@@ -125,17 +125,17 @@ def main():
     # start
     saved_count = 0
     for i in range(MAX_CAPTURES):
-        print(f"Pair {i+1}/{MAX_CAPTURES}: please, position your chessboard and wait for the pair preview...")
+        print(f"main: pair {i+1}/{MAX_CAPTURES}: please, position your chessboard and wait for the pair preview...")
         saved = capture_stereo_images(ESP32_LEFT_IMAGE_URL, ESP32_RIGHT_IMAGE_URL, 
                                      SAVE_PATH_LEFT, SAVE_PATH_RIGHT)
         if saved:
             saved_count += 1
-            print(f"Pair {i+1} saved (total save count: {saved_count}). Capturing next pair")
+            print(f"main: pair {i+1} saved (total save count: {saved_count}). Capturing next pair")
         else:
-            print(f"Pair {i+1} not saved. Capturing next pair")
+            print(f"main: pair {i+1} not saved. Capturing next pair")
 
     cv2.destroyAllWindows()
-    print(f"\nStore images to calibrate completed. Total save count: {saved_count}")
+    print(f"\nmain: store_images_to_calibrate completed. Total save count: {saved_count}")
 
 if __name__ == "__main__":
     main()

@@ -126,15 +126,15 @@ def process_images():
         output_path = join(IMAGES_SAVE_PATH, basename(left_image_path))
         cv2.imwrite(output_path, combined)
 
-        print(f"Processed and saved {left_image_path} and {right_image_path}")
+        print(f"process_images: processed and saved {left_image_path} and {right_image_path}")
 
 ###########################
 # Main: Run rectification #
 ###########################
 def main():
     process_images()
-    print(f"Rectified images saved to {IMAGES_SAVE_PATH}")
-    print(f"Stereo rectification maps saved to {RECTIFICATION_MAPS_SAVE_PATH}")
+    print(f"main: rectified images saved to {IMAGES_SAVE_PATH}")
+    print(f"main: stereo rectification maps saved to {RECTIFICATION_MAPS_SAVE_PATH}")
 
 if __name__ == "__main__":
     main()

@@ -106,7 +106,7 @@ def process_image_pairs():
             show_side_by_side(imgL_drawn, imgR_drawn, "Chessboard Corners")
             save_side_by_side(imgL_drawn, imgR_drawn, f"{timestamp_left}_side_by_side.jpg", side_by_side_images_path)
         else:
-            print(f"Chessboard corners not found for {img_left} and {img_right}")
+            print(f"process_image_pairs: chessboard corners not found for {img_left} and {img_right}")
 
     # format data for calibration
     objpoints_reshaped = [objp.reshape(-1, 1, 3) for _ in range(len(imgpoints_left))]
@@ -115,9 +115,9 @@ def process_image_pairs():
     imgpoints_left_formatted = [ip.astype(np.float32) for ip in imgpoints_left]
     imgpoints_right_formatted = [ip.astype(np.float32) for ip in imgpoints_right]
     
-    print("- object points shape and type:", np.array(objpoints_reshaped).shape, np.array(objpoints_reshaped).dtype)
-    print("- image points left shape and type:", np.array(imgpoints_left_formatted).shape, np.array(imgpoints_left_formatted).dtype)
-    print("- image points right shape and type:", np.array(imgpoints_right_formatted).shape, np.array(imgpoints_right_formatted).dtype)
+    print("process_image_pairs: object points shape and type:", np.array(objpoints_reshaped).shape, np.array(objpoints_reshaped).dtype)
+    print("process_image_pairs: image points left shape and type:", np.array(imgpoints_left_formatted).shape, np.array(imgpoints_left_formatted).dtype)
+    print("process_image_pairs: image points right shape and type:", np.array(imgpoints_right_formatted).shape, np.array(imgpoints_right_formatted).dtype)
 
     return grayL.shape[::-1], objpoints_reshaped, imgpoints_left_formatted, imgpoints_right_formatted
 
@@ -153,7 +153,7 @@ def calibrate_cameras(img_size, objpoints, imgpoints_left, imgpoints_right):
             flags=flags,
             criteria=criteria
         )
-        print(f"Left camera calibration RMS error: {rms_left}")
+        print(f"calibrate_cameras: left camera calibration RMS error: {rms_left}")
         calibration.update(
             {
                 'K_left': K_left,
@@ -163,7 +163,7 @@ def calibrate_cameras(img_size, objpoints, imgpoints_left, imgpoints_right):
             }
         )
     except Exception as e:
-        print("Left camera calibration failed:", e)
+        print("calibrate_cameras: left camera calibration failed:", e)
         return None
 
     # calibrate right camera
@@ -177,7 +177,7 @@ def calibrate_cameras(img_size, objpoints, imgpoints_left, imgpoints_right):
             flags=flags,
             criteria=criteria
         )
-        print(f"Right camera calibration RMS error: {rms_right}")
+        print(f"calibrate_cameras: right camera calibration RMS error: {rms_right}")
         calibration.update(
             {
                 'K_right': K_right,
@@ -187,7 +187,7 @@ def calibrate_cameras(img_size, objpoints, imgpoints_left, imgpoints_right):
             }
         )
     except Exception as e:
-        print("Right camera calibration failed:", e)
+        print("calibrate_cameras: right camera calibration failed:", e)
         return None
 
     # perform stereo calibration
@@ -208,14 +208,14 @@ def calibrate_cameras(img_size, objpoints, imgpoints_left, imgpoints_right):
             flags=cv2.fisheye.CALIB_FIX_INTRINSIC, # fix K and D matrices, only solve for R, T, E, F
             criteria=criteria
         )
-        print(f"Stereo calibration RMS error: {rms_stereo}")
+        print(f"calibrate_cameras: stereo calibration RMS error: {rms_stereo}")
         calibration.update({'R': R, 'T': T, 'E': E, 'F': F})
     except Exception as e:
-        print("Stereo calibration failed:", e)
+        print("calibrate_cameras: stereo calibration failed:", e)
         return None
 
-    print("Camera matrix left eye:\n", K_left)
-    print("Camera matrix right eye:\n", K_right)
+    print("calibrate_cameras: camera matrix left eye:\n", K_left)
+    print("calibrate_cameras: camera matrix right eye:\n", K_right)
 
     return calibration
 
@@ -249,12 +249,12 @@ def main():
     # calibrate
     calibration = calibrate_cameras(img_size, objpoints, imgpoints_left, imgpoints_right)
     if calibration is None:
-        print("Calibration failed")
+        print("main: calibration failed")
         return
     
     # save calibration parameters
     save_calibration_parameters(calibration)
-    print("Calibration succeeded (check output dir)")
+    print("main: calibration succeeded (check output dir)")
 
 if __name__ == "__main__":
     main()

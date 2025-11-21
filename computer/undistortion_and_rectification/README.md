@@ -1,4 +1,4 @@
-# Notes on the `undistortion_and_rectification/` code:
+# Notes on the `computer/undistortion_and_rectification/` code:
 
 ## Configuration
 

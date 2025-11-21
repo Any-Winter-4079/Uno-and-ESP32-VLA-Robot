@@ -1,4 +1,4 @@
-# Notes on the `calibration/` code:
+# Notes on the `computer/calibration/` code:
 
 ## Hardware Setup
 

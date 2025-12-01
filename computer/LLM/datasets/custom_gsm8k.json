@@ -86,7 +86,7 @@
       ],
       "Red Herring": [
         {
-          "question": "A library has 50 fiction books, 30 non-fiction books, and 20 maganizes. How many books must be added to have 120 books in total?",
+          "question": "A library has 50 fiction books, 30 non-fiction books, and 20 magazines. How many books must be added to have 120 books in total?",
           "answer": "40"
         },
         {
@@ -139,7 +139,7 @@
         },
         {
           "question": "A bag contains 3 red, 2 blue, and 5 green marbles. What is the probability of drawing a blue marble first then a green marble, without replacement, expressed from 0 to 1 as a floating value?",
-          "answer": "0.10"
+          "answer": "0.11"
         },
         {
           "question": "The probability of raining on any given day in April is 0.2. What is the probability of it not raining two consecutive days in April, using the same notation?",

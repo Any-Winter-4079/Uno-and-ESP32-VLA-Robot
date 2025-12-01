@@ -1,9 +1,10 @@
-import os
 import io
+import time
 import asyncio
-import datetime
 import websockets
 from pydub import AudioSegment
+from transformers.pipelines.audio_utils import ffmpeg_read
+from transformers import WhisperProcessor, WhisperForConditionalGeneration
 from get_audio_and_run_speech_to_text_and_text_to_speech import allow_recording_when_robot_thinks_and_stays_quiet
 
 #################
@@ -20,8 +21,15 @@ ESP32_WROVER_IP = "172.20.10.12" if USE_HOTSPOT else "192.168.1.182"    # ESP32-
 SAMPLE_RATE = 16000                                                     # 16kHz required for Whisper compatibility
 CHANNELS = 1                                                            # mono
 BIT_DEPTH = 2                                                           # 16-bit audio (2 bytes per sample)
-SAVE_FOLDER = "recorded_audio/"                                         # to save the resulting audio as .WAV after END_OF_AUDIO
 END_OF_AUDIO_SIGNAL = "END_OF_AUDIO"                                    # ESP32-WROVER's special message to mark audio end
+
+# STT
+MIN_WORDS_THRESHOLD = 2                                                 # ignore if less than this word count (likely, noise)
+STT_MODEL = "whisper-tiny"                                              # Whisper model variant (e.g., tiny, small, medium, large-v2)
+
+# load STT model
+processor = WhisperProcessor.from_pretrained("openai/" + STT_MODEL)
+model = WhisperForConditionalGeneration.from_pretrained("openai/" + STT_MODEL)
 
 ######################################
 # Helper 1: WebSocket audio receiver #
@@ -64,14 +72,40 @@ async def audio_receiver(websocket):
                 wav_bytes = io.BytesIO()
                 audio_segment.export(wav_bytes, format="wav")
 
-                ##############
-                # Save audio #
-                ##############
-                timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-                filename = os.path.join(SAVE_FOLDER, f"{timestamp}.wav")
-                with open(filename, "wb") as wav_file:
-                    wav_file.write(wav_bytes.getvalue())
-                print(f"audio_receiver: audio saved to {filename}")
+                ###########
+                # Run STT #
+                ###########
+                # decode WAV into float array for Whisper
+                inputs = ffmpeg_read(wav_bytes.getvalue(), sampling_rate=SAMPLE_RATE)
+
+                # start STT timing
+                start_time = time.time()
+
+                # prepare input features for Whisper
+                input_features = processor(inputs, sampling_rate=SAMPLE_RATE, return_tensors="pt").input_features
+
+                # generate token predictions from audio input
+                predicted_ids = model.generate(input_features, max_new_tokens=256)
+
+                # decode token IDs to text
+                transcription = processor.batch_decode(predicted_ids, skip_special_tokens=True)
+
+                # end STT timing
+                end_time = time.time()
+                time_taken = end_time - start_time
+
+                # get approximate number of words
+                num_words = len(transcription[0].split())
+
+                #####################
+                # Print STT results #
+                #####################
+                print(f"audio_receiver: time taken for STT: {time_taken:.2f} seconds")
+                print(f"audio_receiver: number of words in transcription: {num_words}")
+                if num_words >= MIN_WORDS_THRESHOLD:
+                    print("audio_receiver: audio transcription:", transcription)
+                else:
+                    print(f"audio_receiver: audio ignored due to: {num_words} < {MIN_WORDS_THRESHOLD} words")
 
                 ##########################
                 # Set buffer to 0 length #
@@ -115,9 +149,6 @@ async def start_audio_server():
 # Test #
 ########
 if __name__ == "__main__":
-    # ensure the save folder exists
-    os.makedirs(SAVE_FOLDER, exist_ok=True)
-
     # main is async because start_audio_server is async and needs awaiting
     async def main():
         # create and start the WebSocket server

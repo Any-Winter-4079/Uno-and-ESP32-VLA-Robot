@@ -1,4 +1,4 @@
-# Notes on the `computer/LLM/exemplars/` code:
+# Notes on `computer/LLM/exemplars/`:
 
 ## Use Case
 

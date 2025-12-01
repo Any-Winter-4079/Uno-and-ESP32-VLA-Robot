@@ -6,6 +6,7 @@ import subprocess
 # Run code with subprocess timeout #
 ####################################
 def run_code_with_subprocess_timeout(code, timeout=3):
+    temp_script_name = None
     try:
         code_wrapper = f"""
 import json

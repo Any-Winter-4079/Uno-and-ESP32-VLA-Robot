@@ -40,14 +40,14 @@ SECONDS_BETWEEN_IMAGE_CAPTURES = 3  # time to press 's' (before a new pair of fr
 # Helper 1: Update camera config #
 ##################################
 def update_camera_config(esp32_config_url, jpeg_quality, frame_size):
-    data = {'jpeg_quality': jpeg_quality, 'frame_size': frame_size}
-    headers = {'Content-Type': 'application/x-www-form-urlencoded'}
+    data = {"jpeg_quality": jpeg_quality, "frame_size": frame_size}
+    headers = {"Content-Type": "application/x-www-form-urlencoded"}
     try:
         response = requests.post(esp32_config_url, data=data, headers=headers, timeout=CONFIG_TIMEOUT)
         print(f"update_camera_config: response from ESP32-CAM: {response.text}")
         return True
     except Exception as e:
-        print(f"update_camera_config: error sending update camera config request to ESP32-CAM: {e}")
+        print(f"update_camera_config: error sending update camera config request to ESP32-CAM: {str(e)}")
         return False
 
 #########################
@@ -60,7 +60,7 @@ def fetch_image(url, queue):
         image = cv2.imdecode(image_numpy, cv2.IMREAD_COLOR)
         queue.append(image)
     except Exception as e:
-        print(f"fetch_image: error fetching frame from ESP32-CAM at {url}: {e}")
+        print(f"fetch_image: error fetching frame from ESP32-CAM at {url}: {str(e)}")
         queue.append(None)
 
 ###################################
@@ -93,7 +93,7 @@ def capture_stereo_images(url_left, url_right, save_path_left, save_path_right):
     key = cv2.waitKey(SECONDS_BETWEEN_IMAGE_CAPTURES * 1000)
 
     # save images upon 's' key press
-    if key == ord('s'):
+    if key == ord("s"):
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         save_filename_left = join(save_path_left, f"image_{timestamp}.jpg")
         save_filename_right = join(save_path_right, f"image_{timestamp}.jpg")

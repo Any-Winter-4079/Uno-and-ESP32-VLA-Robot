@@ -15,20 +15,20 @@ import numpy as np
 #################
 
 # Input paths (need the calibration images)
-LEFT_EYE_IMAGES_DIR = '../calibration/images/left_eye'
-RIGHT_EYE_IMAGES_DIR = '../calibration/images/right_eye'
+LEFT_EYE_IMAGES_DIR = "../calibration/images/left_eye"
+RIGHT_EYE_IMAGES_DIR = "../calibration/images/right_eye"
 
 # Storage paths
-IMAGES_SAVE_PATH = './images/undistorted_and_rectified_calibration_images'
-RECTIFICATION_MAPS_SAVE_PATH = './stereo_maps' # dir
+IMAGES_SAVE_PATH = "./images/undistorted_and_rectified_calibration_images"
+RECTIFICATION_MAPS_SAVE_PATH = "./stereo_maps" # dir
 
 # Calibration parameters (need the calibration parameters)
-CAMERA_MARIX_LEFT = np.load('../calibration/parameters/camera_matrix_left_eye.npy')
-DIST_COEFFS_LEFT = np.load('../calibration/parameters/distortion_coeffs_left_eye.npy')
-CAMERA_MARIX_RIGHT = np.load('../calibration/parameters/camera_matrix_right_eye.npy')
-DIST_COEFFS_RIGHT = np.load('../calibration/parameters/distortion_coeffs_right_eye.npy')
-R = np.load('../calibration/parameters/rotation_matrix.npy')
-T = np.load('../calibration/parameters/translation_vector.npy')
+CAMERA_MARIX_LEFT = np.load("../calibration/parameters/camera_matrix_left_eye.npy")
+DIST_COEFFS_LEFT = np.load("../calibration/parameters/distortion_coeffs_left_eye.npy")
+CAMERA_MARIX_RIGHT = np.load("../calibration/parameters/camera_matrix_right_eye.npy")
+DIST_COEFFS_RIGHT = np.load("../calibration/parameters/distortion_coeffs_right_eye.npy")
+R = np.load("../calibration/parameters/rotation_matrix.npy")
+T = np.load("../calibration/parameters/translation_vector.npy")
 
 RECTIFICATION_FLAGS = cv2.CALIB_ZERO_DISPARITY # use zero disparity setting for better results with parallel cameras
 
@@ -77,21 +77,21 @@ def save_stereo_maps(stereoMapL, stereoMapR, Q):
     makedirs(RECTIFICATION_MAPS_SAVE_PATH, exist_ok=True)
     
     # save individual map components for both cameras
-    np.save(join(RECTIFICATION_MAPS_SAVE_PATH, 'stereoMapL_x.npy'), stereoMapL[0])
-    np.save(join(RECTIFICATION_MAPS_SAVE_PATH, 'stereoMapL_y.npy'), stereoMapL[1])
+    np.save(join(RECTIFICATION_MAPS_SAVE_PATH, "stereoMapL_x.npy"), stereoMapL[0])
+    np.save(join(RECTIFICATION_MAPS_SAVE_PATH, "stereoMapL_y.npy"), stereoMapL[1])
 
-    np.save(join(RECTIFICATION_MAPS_SAVE_PATH, 'stereoMapR_x.npy'), stereoMapR[0])
-    np.save(join(RECTIFICATION_MAPS_SAVE_PATH, 'stereoMapR_y.npy'), stereoMapR[1])
+    np.save(join(RECTIFICATION_MAPS_SAVE_PATH, "stereoMapR_x.npy"), stereoMapR[0])
+    np.save(join(RECTIFICATION_MAPS_SAVE_PATH, "stereoMapR_y.npy"), stereoMapR[1])
     
-    np.save(join(RECTIFICATION_MAPS_SAVE_PATH, 'Q.npy'), Q)
+    np.save(join(RECTIFICATION_MAPS_SAVE_PATH, "Q.npy"), Q)
 
 ############################
 # Helper 3: Process images #
 ############################
 def process_images():
     # find and sort all input images
-    left_images = sorted(glob.glob(join(LEFT_EYE_IMAGES_DIR, '*.jpg')))
-    right_images = sorted(glob.glob(join(RIGHT_EYE_IMAGES_DIR, '*.jpg')))
+    left_images = sorted(glob.glob(join(LEFT_EYE_IMAGES_DIR, "*.jpg")))
+    right_images = sorted(glob.glob(join(RIGHT_EYE_IMAGES_DIR, "*.jpg")))
     
     # set up output dir
     makedirs(IMAGES_SAVE_PATH, exist_ok=True)

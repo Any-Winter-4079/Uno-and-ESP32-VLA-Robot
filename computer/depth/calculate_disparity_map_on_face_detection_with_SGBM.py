@@ -36,8 +36,8 @@ esp32_right_config_url = f"http://{RIGHT_EYE_IP}/camera_config"
 
 # load stereo calibration maps
 # NOTE: run computer/undistortion_and_rectification/undistort_and_rectify.py first
-stereo_maps_dir = '../undistortion_and_rectification/stereo_maps'
-Q = np.load(join(stereo_maps_dir, 'Q.npy'))                       # reprojection matrix (disparity -> 3D points)
+stereo_maps_dir = "../undistortion_and_rectification/stereo_maps"
+Q = np.load(join(stereo_maps_dir, "Q.npy"))                       # reprojection matrix (disparity -> 3D points)
 
 # reference: https://learnopencv.com/depth-perception-using-stereo-camera-python-c/
 
@@ -240,7 +240,7 @@ def main():
       # Display SGBM disparity map #
       ##############################
       cv2.imshow("SGBM disparity map", norm_disparity)
-      if cv2.waitKey(50) & 0xFF == ord('q'):
+      if cv2.waitKey(50) & 0xFF == ord("q"):
             break
 
    ##############################

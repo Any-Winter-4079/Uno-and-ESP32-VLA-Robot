@@ -29,11 +29,11 @@ esp32_right_config_url = f"http://{RIGHT_EYE_IP}/camera_config"
 
 # load stereo calibration maps
 # NOTE: run computer/undistortion_and_rectification/undistort_and_rectify.py first
-stereo_maps_dir = '../undistortion_and_rectification/stereo_maps'
-stereoMapL_x = np.load(join(stereo_maps_dir, 'stereoMapL_x.npy'))   # left-eye map for x-coordinate rectification
-stereoMapL_y = np.load(join(stereo_maps_dir, 'stereoMapL_y.npy'))   # left-eye map for y-coordinate rectification
-stereoMapR_x = np.load(join(stereo_maps_dir, 'stereoMapR_x.npy'))   # right-eye map for x-coordinate rectification
-stereoMapR_y = np.load(join(stereo_maps_dir, 'stereoMapR_y.npy'))   # right-eye map for y-coordinate rectification
+stereo_maps_dir = "../undistortion_and_rectification/stereo_maps"
+stereoMapL_x = np.load(join(stereo_maps_dir, "stereoMapL_x.npy"))   # left-eye map for x-coordinate rectification
+stereoMapL_y = np.load(join(stereo_maps_dir, "stereoMapL_y.npy"))   # left-eye map for y-coordinate rectification
+stereoMapR_x = np.load(join(stereo_maps_dir, "stereoMapR_x.npy"))   # right-eye map for x-coordinate rectification
+stereoMapR_y = np.load(join(stereo_maps_dir, "stereoMapR_y.npy"))   # right-eye map for y-coordinate rectification
 
 ######################################
 # Helper 1: fetch image with timeout #
@@ -150,7 +150,7 @@ def main():
         # Display depth map #
         #####################
         cv2.imshow("Depth Anything depth map", depth)
-        if cv2.waitKey(50) & 0xFF == ord('q'):
+        if cv2.waitKey(50) & 0xFF == ord("q"):
             break
     
     ##############################

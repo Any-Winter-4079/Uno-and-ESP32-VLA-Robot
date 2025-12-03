@@ -54,7 +54,7 @@ from datetime import datetime
 EVAL_CATEGORY = f"driving_at_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
 
 # Model paths
-REGULAR_MODEL_PATH = "Qwen/Qwen3-VL-32B-Instruct"                       # non-SFTed model path (regular Qwen3-VL)
+REGULAR_MODEL_PATH = "Qwen/Qwen3-VL-4B-Instruct"                       # non-SFTed model path (regular Qwen3-VL)
                                                                         # SFTed model path imported from production.py
 
 # Maximum circuit laps

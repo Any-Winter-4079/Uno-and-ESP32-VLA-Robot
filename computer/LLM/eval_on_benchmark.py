@@ -163,19 +163,19 @@ def extract_and_format_value(input_value):
     numeric_part_reversed = ""
     found_digit = False
     for char in reversed_input:
-        if char.isdigit() or (char == '.' and found_digit):
+        if char.isdigit() or (char == "." and found_digit):
             found_digit = True
             numeric_part_reversed += char
-        elif char == ',' and found_digit:
+        elif char == "," and found_digit:
             continue
-        elif char == '-' and found_digit:
+        elif char == "-" and found_digit:
             numeric_part_reversed += char
             break
         elif found_digit:
             break
     numeric_part = numeric_part_reversed[::-1]
     try:
-        formatted_value = "{:,.2f}".format(float(numeric_part.replace(',', '')))
+        formatted_value = "{:,.2f}".format(float(numeric_part.replace(",", "")))
         return formatted_value
     except ValueError:
         return "bug"

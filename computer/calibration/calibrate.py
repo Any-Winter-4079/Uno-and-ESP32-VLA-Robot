@@ -32,7 +32,7 @@ def extract_timestamp(filename):
 ######################################
 # Helper 2: Show images side-by-side #
 ######################################
-def show_side_by_side(img1, img2, window_name='Side-by-side', display_time=500):
+def show_side_by_side(img1, img2, window_name="Side-by-side", display_time=500):
     # concatenate images side by side
     combined_image = np.concatenate((img1, img2), axis=1)
     # display and destroy
@@ -54,8 +54,8 @@ def save_side_by_side(img1, img2, filename, output_dir):
 #################################
 def process_image_pairs():
     # load images
-    images_left = glob.glob('images/left_eye/*.jpg')
-    images_right = glob.glob('images/right_eye/*.jpg')
+    images_left = glob.glob("images/left_eye/*.jpg")
+    images_right = glob.glob("images/right_eye/*.jpg")
 
     # sort images by timestamp
     images_left.sort(key=extract_timestamp)
@@ -156,14 +156,14 @@ def calibrate_cameras(img_size, objpoints, imgpoints_left, imgpoints_right):
         print(f"calibrate_cameras: left camera calibration RMS error: {rms_left}")
         calibration.update(
             {
-                'K_left': K_left,
-                'D_left': D_left,
-                'rvecs_left': rvecs_left,
-                'tvecs_left': tvecs_left
+                "K_left": K_left,
+                "D_left": D_left,
+                "rvecs_left": rvecs_left,
+                "tvecs_left": tvecs_left
             }
         )
     except Exception as e:
-        print("calibrate_cameras: left camera calibration failed:", e)
+        print(f"calibrate_cameras: left camera calibration failed: {str(e)}")
         return None
 
     # calibrate right camera
@@ -180,14 +180,14 @@ def calibrate_cameras(img_size, objpoints, imgpoints_left, imgpoints_right):
         print(f"calibrate_cameras: right camera calibration RMS error: {rms_right}")
         calibration.update(
             {
-                'K_right': K_right,
-                'D_right': D_right,
-                'rvecs_right': rvecs_right,
-                'tvecs_right': tvecs_right
+                "K_right": K_right,
+                "D_right": D_right,
+                "rvecs_right": rvecs_right,
+                "tvecs_right": tvecs_right
             }
         )
     except Exception as e:
-        print("calibrate_cameras: right camera calibration failed:", e)
+        print(f"calibrate_cameras: right camera calibration failed: {str(e)}")
         return None
 
     # perform stereo calibration
@@ -209,9 +209,9 @@ def calibrate_cameras(img_size, objpoints, imgpoints_left, imgpoints_right):
             criteria=criteria
         )
         print(f"calibrate_cameras: stereo calibration RMS error: {rms_stereo}")
-        calibration.update({'R': R, 'T': T, 'E': E, 'F': F})
+        calibration.update({"R": R, "T": T, "E": E, "F": F})
     except Exception as e:
-        print("calibrate_cameras: stereo calibration failed:", e)
+        print(f"calibrate_cameras: stereo calibration failed: {str(e)}")
         return None
 
     print("calibrate_cameras: camera matrix left eye:\n", K_left)
@@ -224,20 +224,20 @@ def calibrate_cameras(img_size, objpoints, imgpoints_left, imgpoints_right):
 ###################################################
 def save_calibration_parameters(calibration):
     # set up output dir
-    os.makedirs('parameters', exist_ok=True)
+    os.makedirs("parameters", exist_ok=True)
     
     # save intrinsic (per camera) calibration parameters
-    for eye in ['left', 'right']:
-        np.save(f'parameters/camera_matrix_{eye}_eye.npy', calibration[f'K_{eye}'])
-        np.save(f'parameters/distortion_coeffs_{eye}_eye.npy', calibration[f'D_{eye}'])
-        np.save(f'parameters/rotation_vec_{eye}_eye.npy', calibration[f'rvecs_{eye}'])
-        np.save(f'parameters/translation_vec_{eye}_eye.npy', calibration[f'tvecs_{eye}'])
+    for eye in ["left", "right"]:
+        np.save(f"parameters/camera_matrix_{eye}_eye.npy", calibration[f"K_{eye}"])
+        np.save(f"parameters/distortion_coeffs_{eye}_eye.npy", calibration[f"D_{eye}"])
+        np.save(f"parameters/rotation_vec_{eye}_eye.npy", calibration[f"rvecs_{eye}"])
+        np.save(f"parameters/translation_vec_{eye}_eye.npy", calibration[f"tvecs_{eye}"])
     
     # save stereo (across cameras) calibration parameters
-    np.save('parameters/rotation_matrix.npy', calibration['R'])
-    np.save('parameters/translation_vector.npy', calibration['T'])
-    np.save('parameters/essential_matrix.npy', calibration['E'])
-    np.save('parameters/fundamental_matrix.npy', calibration['F'])
+    np.save("parameters/rotation_matrix.npy", calibration["R"])
+    np.save("parameters/translation_vector.npy", calibration["T"])
+    np.save("parameters/essential_matrix.npy", calibration["E"])
+    np.save("parameters/fundamental_matrix.npy", calibration["F"])
 
 #########################
 # Main: Run calibration #

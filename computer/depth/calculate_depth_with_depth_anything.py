@@ -14,7 +14,7 @@ from calibration.store_images_to_calibrate import update_camera_config
 # Configuration #
 #################
 
-JPEG_QUALITY = 12                                                   # 0-63 lower means higher quality
+JPEG_QUALITY = 12                                                   # 0-63 (lower means higher quality)
 FRAME_SIZE = "FRAMESIZE_VGA"                                        # 640x480 resolution
 USE_HOTSPOT = True                                                  # True for phone hotspot, False for home WiFi
 RIGHT_EYE_IP = "172.20.10.10" if USE_HOTSPOT else "192.168.1.180"   # ESP32-CAM right eye IP
@@ -30,13 +30,13 @@ esp32_right_config_url = f"http://{RIGHT_EYE_IP}/camera_config"
 # load stereo calibration maps
 # NOTE: run computer/undistortion_and_rectification/undistort_and_rectify.py first
 stereo_maps_dir = '../undistortion_and_rectification/stereo_maps'
-stereoMapL_x = np.load(join(stereo_maps_dir, 'stereoMapL_x.npy'))
-stereoMapL_y = np.load(join(stereo_maps_dir, 'stereoMapL_y.npy'))
-stereoMapR_x = np.load(join(stereo_maps_dir, 'stereoMapR_x.npy'))
-stereoMapR_y = np.load(join(stereo_maps_dir, 'stereoMapR_y.npy'))
+stereoMapL_x = np.load(join(stereo_maps_dir, 'stereoMapL_x.npy'))   # left-eye map for x-coordinate rectification
+stereoMapL_y = np.load(join(stereo_maps_dir, 'stereoMapL_y.npy'))   # left-eye map for y-coordinate rectification
+stereoMapR_x = np.load(join(stereo_maps_dir, 'stereoMapR_x.npy'))   # right-eye map for x-coordinate rectification
+stereoMapR_y = np.load(join(stereo_maps_dir, 'stereoMapR_y.npy'))   # right-eye map for y-coordinate rectification
 
 ######################################
-# Helper 1: Fetch image with timeout #
+# Helper 1: fetch image with timeout #
 ######################################
 def fetch_image_with_timeout(url, queue, timeout=STREAM_TIMEOUT):
     try:
@@ -49,7 +49,7 @@ def fetch_image_with_timeout(url, queue, timeout=STREAM_TIMEOUT):
         queue.append(None)
 
 #############################################
-# Helper 2: Get both images using threading #
+# Helper 2: get both images using threading #
 #############################################
 def get_stereo_images(url_left, url_right):
     queue_left, queue_right = [], []
@@ -156,8 +156,9 @@ def main():
     ##############################
     # Report performance metrics #
     ##############################
-    average_depth_time = total_depth_time / depth_iterations
-    print(f"main: average depth calculation time over {depth_iterations} iterations: {average_depth_time:.3f} seconds")
+    if depth_iterations > 0:
+        average_depth_time = total_depth_time / depth_iterations
+        print(f"main: average depth calculation time over {depth_iterations} iterations: {average_depth_time:.3f} seconds")
 
 ########
 # Test #

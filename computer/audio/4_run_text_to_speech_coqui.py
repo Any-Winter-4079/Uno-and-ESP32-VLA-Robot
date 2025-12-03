@@ -42,7 +42,7 @@ TTS_MODELS = {
         "language": None
     },
 }
-TTS_MODEL_KEY = "tortoise-v2" # chosen TTS model
+TTS_MODEL_KEY = "vits" # chosen TTS model
 
 # Texts to convert to speech 
 TEXTS = [
@@ -50,7 +50,7 @@ TEXTS = [
     "Please use our dedicated channels for questions and discussion. Help is much more valuable if it's shared publicly so that more people can benefit from it.",
     "Pues he notado que recibo una lista de listas. Quisiera saber: primero, si están ordenadas según escribo las 'queries'; segundo, de dónde viene la otra lista que recibo; y tercero, si esta otra lista es en base a audio, visión, reconocimiento de cara, o qué"
 ]
-TEXT_IDX = 0 # chosen text
+TEXT_IDX = 2 # chosen text
 
 #######################
 # Results for xtts_v2 #

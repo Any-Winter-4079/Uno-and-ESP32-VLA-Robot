@@ -42,8 +42,8 @@ def save_url_data_to_cache(url, content, cache):
         # sort by datetime
         sorted_cache_items = sorted(
             cache.items(), 
-            # item[0], the key ("timestamp")
-            # item[1], the value (timestamp)
+            # item[0] = url (cache key)
+            # item[1] = {"content": ..., "timestamp": ...}
             key=lambda item: item[1].get("timestamp"), 
             reverse=True
         )
@@ -213,7 +213,7 @@ def open_url(url, timeout=15):
 # Test #
 ########
 def main():
-    query = "NanoGPT speedrun"
+    query = "NanoGPT Speedrun Living Worklog"
     max_results=2
 
     # browse

@@ -75,27 +75,27 @@ async def audio_receiver(websocket):
                 ###########
                 # Run STT #
                 ###########
-                # decode WAV into float array for Whisper
+                # decode (raw 16-bit PCM) WAV into float32 array for Whisper
                 inputs = ffmpeg_read(wav_bytes.getvalue(), sampling_rate=SAMPLE_RATE)
 
                 # start STT timing
                 start_time = time.time()
 
-                # prepare input features for Whisper
+                # prepare input features for Whisper, converting the float32 audio into a log-mel spectrogram
                 input_features = processor(inputs, sampling_rate=SAMPLE_RATE, return_tensors="pt").input_features
 
-                # generate token predictions from audio input
+                # generate token predictions from audio log-mel spectrogram
                 predicted_ids = model.generate(input_features, max_new_tokens=256)
 
                 # decode token IDs to text
-                transcription = processor.batch_decode(predicted_ids, skip_special_tokens=True)
+                transcript = processor.batch_decode(predicted_ids, skip_special_tokens=True)[0]
 
                 # end STT timing
                 end_time = time.time()
                 time_taken = end_time - start_time
 
                 # get approximate number of words
-                num_words = len(transcription[0].split())
+                num_words = len(transcript.split())
 
                 #####################
                 # Print STT results #
@@ -103,7 +103,7 @@ async def audio_receiver(websocket):
                 print(f"audio_receiver: time taken for STT: {time_taken:.2f} seconds")
                 print(f"audio_receiver: number of words in transcription: {num_words}")
                 if num_words >= MIN_WORDS_THRESHOLD:
-                    print("audio_receiver: audio transcription:", transcription)
+                    print("audio_receiver: audio transcription:", transcript)
                 else:
                     print(f"audio_receiver: audio ignored due to: {num_words} < {MIN_WORDS_THRESHOLD} words")
 
@@ -112,9 +112,9 @@ async def audio_receiver(websocket):
                 ##########################
                 audio_buffer.truncate(0)
 
-                #####################################################
-                # Allow (or reenable) recording on the ESP32-WROVER #
-                #####################################################
+                ######################################################
+                # Allow (or re-enable) recording on the ESP32-WROVER #
+                ######################################################
                 # NOTE: for a new run of this script not to fail due to the WROVER
                 # being 'blocked' with allowRecording = false, we run:
                 allow_recording_when_robot_thinks_and_stays_quiet(ESP32_WROVER_IP)

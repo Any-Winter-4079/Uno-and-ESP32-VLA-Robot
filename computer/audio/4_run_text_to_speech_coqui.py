@@ -10,7 +10,7 @@ from TTS.api import TTS
 
 # Cloning and save paths
 CLONING_VOICE_PATH = "cloning_voice/_tmp_gradio_ad73574f69f41643999d6e440c0df3da8e7ca067_output.wav"    # path to voice to clone
-SAVE_PATH = "output.wav"                                                                                # path to save outputWAV
+SAVE_PATH = "output.wav"                                                                                # path to save WAV file
 
 # TTS models
 # NOTE: mps either is not available, or looks on par or worse compared to cpu

@@ -44,29 +44,28 @@ print(f"Sampling rate: {sampling_rate}")
 with open(audio_path, "rb") as f:
     inputs = f.read()
 
-# decode bytes into array using ffmpeg
+# decode WAV bytes into float32 array for Whisper
 inputs = ffmpeg_read(inputs, sampling_rate=sampling_rate)
 
 # start STT timing
 start_time = time.time()
 
-# prepare input features for Whisper
+# prepare input features for Whisper, converting the float32 audio into a log-mel spectrogram
 input_features = processor(inputs, sampling_rate=sampling_rate, return_tensors="pt").input_features
 
-# generate token predictions from audio input
+# generate token predictions from audio log-mel spectrogram
 predicted_ids = model.generate(input_features, max_new_tokens=256)
 
 # decode token IDs to text
-transcription = processor.batch_decode(predicted_ids, skip_special_tokens=True)
+transcript = processor.batch_decode(predicted_ids, skip_special_tokens=True)[0]
 
 # end STT timing
 end_time = time.time()
 time_taken = end_time - start_time
 
 # get approximate number of words
-num_words = len(transcription[0].split())
+num_words = len(transcript.split())
 
 print(f"Time taken for STT: {time_taken:.2f} seconds")
 print(f"Number of words in transcription: {num_words}")
-print("Transcription:")
-print(transcription)
+print("Audio transcription:", transcript)

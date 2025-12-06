@@ -141,7 +141,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[[\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -175,7 +175,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[[\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -183,7 +183,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[[\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -209,7 +209,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[[\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -217,7 +217,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[[\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -225,7 +225,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:31.646543\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, funcionas, que ya es mucho\n</audio>\n\n<longTermMemories>\n[[[\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:31.646543\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, funcionas, que ya es mucho\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -243,7 +243,7 @@
     "conversation": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[[\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -251,7 +251,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[[\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -259,7 +259,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:31.646543\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, funcionas, que ya es mucho\n</audio>\n\n<longTermMemories>\n[[[\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:31.646543\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, funcionas, que ya es mucho\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -285,7 +285,7 @@
     "conversation": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[[\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -293,7 +293,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:31.646543\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, funcionas, que ya es mucho\n</audio>\n\n<longTermMemories>\n[[[\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:31.646543\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, funcionas, que ya es mucho\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",

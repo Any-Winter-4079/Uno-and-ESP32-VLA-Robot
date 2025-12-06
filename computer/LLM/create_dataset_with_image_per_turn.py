@@ -182,7 +182,7 @@ Here, let's keep the same goal and task.""",
                     "datetime": "2025-11-06T12:27:53.940999",
                     "audio": "En realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?",
                     "recognizedPeople": ["Edu"],
-                    "longTermMemories": [[('My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).', {'month': 11, 'year': 2025, 'day': 6, 'timestamp': '2025-11-06T12:27:41.940004'})]]
+                    "longTermMemories": [[]]
                 },
                 "output": {
                     "internalThinking": """Scene analysis:
@@ -211,7 +211,7 @@ Yeah, let's keep my goal. I kind of laugh knowing what they are and what I am do
                     "datetime": "2025-11-06T12:28:12.556736",
                     "audio": "Bueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?",
                     "recognizedPeople": ["Edu"],
-                    "longTermMemories": [[('My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).', {'month': 11, 'year': 2025, 'day': 6, 'timestamp': '2025-11-06T12:27:41.940004'})]]
+                    "longTermMemories": [[]]
                 },
                 "output": {
                     "internalThinking": """Scene analysis:
@@ -239,7 +239,7 @@ Let's keep my goal and current task.""",
                     "datetime": "2025-11-06T12:28:31.646543",
                     "audio": "Bueno, funcionas, que ya es mucho",
                     "recognizedPeople": ["Edu"],
-                    "longTermMemories": [[('My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).', {'month': 11, 'year': 2025, 'day': 6, 'timestamp': '2025-11-06T12:27:41.940004'})]]
+                    "longTermMemories": [[]]
                 },
                 "output": {
                     "internalThinking": """Scene analysis:

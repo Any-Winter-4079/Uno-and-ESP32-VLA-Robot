@@ -66,6 +66,15 @@ PRIMARY_GOAL_VARIANTS = [
 # we build:
 # input 1 output 1 input 2 output 2 input 3 output 3 input 4 -> predict output 4
 # Allowing us to introduce mistakes in output 1, 2 and 3, and train the model to recover it in output 4
+
+# NOTE: the order in which the samples are presented in training is also tricky. Consider:
+# an early example pedagogically useful but factually wrong: "3/2 is impossible"
+# a later-in-life, more advanced, and more correct example: "3/2 is possible"
+# If due to shuffling or using more than 1 epoch you train on the second example, then on the first one,
+# you are going to hurt the model; it is only if (context, current input) is EVERYTHING you
+# need to know to answer a question (which is not the case in current models) that
+# you can get away with this (even being positive then, because you teach it to pay
+# attention to (context and current input) and not store things in weights)
 SCENES = [
     {
         "images_folder": "scene_0001_hello_world_dialogue",

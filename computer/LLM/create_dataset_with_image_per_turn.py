@@ -989,7 +989,7 @@ def main():
             # Append sample to samples #
             ############################
             samples.append({
-                "conversation": sample,
+                "conversations": sample,
                 "image": [
                     os.path.join(
                         os.path.basename(INPUT_IMAGES_DIR), # "images"

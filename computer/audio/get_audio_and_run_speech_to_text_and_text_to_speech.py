@@ -25,6 +25,7 @@ USE_HOTSPOT = True                                                              
 WS_AUDIO_HOST = "172.20.10.4" if USE_HOTSPOT else "192.168.1.174"                               # WebSocket server (computer) IP
 WS_AUDIO_PORT = 8888                                                                            # WebSocket server (computer) port
 ESP32_WROVER_IP = "172.20.10.12" if USE_HOTSPOT else "192.168.1.182"                            # ESP32-WROVER IP to send commands to
+ESP32_REQUEST_TIMEOUT = 5                                                                       # seconds
 
 # Computer - ESP32-WROVER communication
 ESP32_WROVER_ALLOW_RECORDING_ENDPOINT = "allowRecordingWhenRobotThinksAndStaysQuiet"            # ESP32-WROVER endpoint to re-enable recording 
@@ -148,6 +149,7 @@ def get_speech_flag():
 ##################################################################################################################################
 # Helper 7: tell the WROVER to stop sending audio (because latest MAX_SAME_TRANSCRIPTS are the same and it's likely silence now) #
 ##################################################################################################################################
+# NOTE: if the request times out, the ESP32-WROVER will continue sending audio (which would discarded here) until MAX_RECORDING_DURATION_MS
 def send_stop_recording_upon_same_transcript(ip):
     esp32_stop_url = f"http://{ip}/{ESP32_WROVER_STOP_RECORDING_UPON_SAME_TRANSCRIPT_ENDPOINT}"
     print(f"send_stop_recording_upon_same_transcript: sending request to: {esp32_stop_url}")
@@ -155,7 +157,7 @@ def send_stop_recording_upon_same_transcript(ip):
     headers = {"Content-Type": "application/x-www-form-urlencoded"}
     
     try:
-        response = requests.post(esp32_stop_url, data=data, headers=headers, timeout=5)
+        response = requests.post(esp32_stop_url, data=data, headers=headers, timeout=ESP32_REQUEST_TIMEOUT)
         return {"success": True, "message": response.text}
     except requests.RequestException as e:
         return {"success": False, "message": str(e)}
@@ -163,6 +165,8 @@ def send_stop_recording_upon_same_transcript(ip):
 ###################################################################################################################
 # Helper 8: tell the WROVER it can start recording again because the VLA finished (despite deciding not to speak) #
 ###################################################################################################################
+# NOTE: if the request times out, the VLA would run without audio (because the ESP32-WROVER wouldn't send it) for one iteration until
+# LLM/production.py tries calling this function again (which does after every VLA call)
 def allow_recording_when_robot_thinks_and_stays_quiet(ip):
     esp32_allow_url = f"http://{ip}/{ESP32_WROVER_ALLOW_RECORDING_ENDPOINT}"
     print(f"allow_recording_when_robot_thinks_and_stays_quiet: sending request to {esp32_allow_url}")
@@ -170,7 +174,7 @@ def allow_recording_when_robot_thinks_and_stays_quiet(ip):
     headers = {"Content-Type": "application/x-www-form-urlencoded"}
     
     try:
-        response = requests.post(esp32_allow_url, data=data, headers=headers, timeout=5)
+        response = requests.post(esp32_allow_url, data=data, headers=headers, timeout=ESP32_REQUEST_TIMEOUT)
         return {"success": True, "message": response.text}
     except requests.RequestException as e:
         return {"success": False, "message": str(e)}

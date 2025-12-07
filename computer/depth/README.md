@@ -50,7 +50,9 @@ depth
 ├── depth_anything
 │   ├── depth_anything
 │   │   ├── dpt.py (provided script)
+│   │   ├── ... (cloned files)
 │   └── run.py (provided script)
+│   └── ... (cloned files)
 ├── calculate_depth_with_depth_anything.py
 ```
 

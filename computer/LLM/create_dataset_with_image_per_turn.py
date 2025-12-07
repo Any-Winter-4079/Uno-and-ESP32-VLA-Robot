@@ -828,7 +828,7 @@ def format_output(output_dict):
         f"{START_TAG_OPENING}{INTERNAL_THINKING}{START_TAG_CLOSURE}\n{output_dict[INTERNAL_THINKING].strip()}\n{END_TAG_OPENING}{INTERNAL_THINKING}{END_TAG_CLOSURE}"
     ]
 
-    # output in the dataset may contain:
+    # output in the dataset might contain:
     # bodyControl
     # functionCalling
     for tag in (BODY_CONTROL, FUNCTION_CALLING):
@@ -956,7 +956,8 @@ def main():
                 formatted_output_text = format_output(output_text)
                 sample.append({
                     # "gpt"->"assistant" in QwenLM/Qwen3-VL finetuning code; ideally, "output", 
-                    # but requires at least updating QwenLM/Qwen3-VL's code
+                    # but requires at least updating QwenLM/Qwen3-VL's code (e.g., at least
+                    # replacing the hardcoded 'assistant's token id as starting training point)
                     "from": "gpt",
                     "value": formatted_output_text
                 })

@@ -965,7 +965,7 @@ def main():
             ######################
             # Build current turn #
             ######################
-            # NOTE: input will be non-trainable while output will be
+            # NOTE: input will be non-trainable, while output will be
 
             #########
             # Input #
@@ -990,7 +990,8 @@ def main():
             formatted_output_text = format_output(output_text)
             sample.append({
                 # "gpt"->"assistant" in QwenLM/Qwen3-VL finetuning code; ideally, "output", 
-                # but requires at least updating QwenLM/Qwen3-VL's code
+                # but requires at least updating QwenLM/Qwen3-VL's code (e.g., at least
+                # replacing the hardcoded 'assistant's token id as starting training point)
                 "from": "gpt",
                 "value": formatted_output_text
             })

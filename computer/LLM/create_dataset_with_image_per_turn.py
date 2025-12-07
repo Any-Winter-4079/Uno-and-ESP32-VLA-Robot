@@ -742,6 +742,11 @@ FUNCTION_CALLING = "functionCalling"
 PRIMARY_GOAL = "primaryGoal"
 CURRENT_TASK = "currentTask"
 
+# Vision descriptions
+CAMERA_ENDPOINT = "/image.jpg"
+VISION_DESCRIPTION_SUCCESS = "The provided image is what your eyes have just captured."
+VISION_DESCRIPTION_FAILURE = f"{CAMERA_ENDPOINT} timeout or error. No image this turn."
+
 # Paths
 INPUT_IMAGES_DIR = "datasets/vla_sft_dataset/images"
 OUTPUT_DIR = "datasets/vla_sft_dataset/output"
@@ -789,7 +794,7 @@ def format_input(input_dict):
     # audio
     # longTermMemories
     input_parts = [
-        f"{QWEN_IMAGE_TAG}\n{START_TAG_OPENING}{VISION}{START_TAG_CLOSURE}\nProvided image\n{END_TAG_OPENING}{VISION}{END_TAG_CLOSURE}",
+        f"{QWEN_IMAGE_TAG}\n{START_TAG_OPENING}{VISION}{START_TAG_CLOSURE}\n{VISION_DESCRIPTION_SUCCESS}\n{END_TAG_OPENING}{VISION}{END_TAG_CLOSURE}",
         f"{START_TAG_OPENING}{DATETIME}{START_TAG_CLOSURE}\n{input_dict[DATETIME]}\n{END_TAG_OPENING}{DATETIME}{END_TAG_CLOSURE}",
         f"{START_TAG_OPENING}{RECOGNIZED_PEOPLE}{START_TAG_CLOSURE}\n{json.dumps(input_dict[RECOGNIZED_PEOPLE])}\n{END_TAG_OPENING}{RECOGNIZED_PEOPLE}{END_TAG_CLOSURE}",
         f"{START_TAG_OPENING}{AUDIO}{START_TAG_CLOSURE}\n{input_dict[AUDIO]}\n{END_TAG_OPENING}{AUDIO}{END_TAG_CLOSURE}",

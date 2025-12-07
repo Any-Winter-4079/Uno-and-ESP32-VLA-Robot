@@ -3,7 +3,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:26:40.538524\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:26:40.538524\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -18,7 +18,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:26:40.538524\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:26:40.538524\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -26,7 +26,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:26:56.634320\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:26:56.634320\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -42,7 +42,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:26:40.538524\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:26:40.538524\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -50,7 +50,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:26:56.634320\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:26:56.634320\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -58,7 +58,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:13.622400\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:27:13.622400\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -75,7 +75,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:26:40.538524\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:26:40.538524\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -83,7 +83,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:26:56.634320\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:26:56.634320\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -91,7 +91,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:13.622400\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:27:13.622400\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -99,7 +99,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:31.848748\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nIgual te preguntas por qué te hablo en español. Es porque Whisper me entiende mejor en español. Ya sé que tú internamente piensas en inglés.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:27:31.848748\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nIgual te preguntas por qué te hablo en español. Es porque Whisper me entiende mejor en español. Ya sé que tú internamente piensas en inglés.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -117,7 +117,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:26:56.634320\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:26:56.634320\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -125,7 +125,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:13.622400\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:27:13.622400\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -133,7 +133,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:31.848748\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nIgual te preguntas por qué te hablo en español. Es porque Whisper me entiende mejor en español. Ya sé que tú internamente piensas en inglés.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:27:31.848748\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nIgual te preguntas por qué te hablo en español. Es porque Whisper me entiende mejor en español. Ya sé que tú internamente piensas en inglés.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -141,7 +141,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -159,7 +159,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:13.622400\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:27:13.622400\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -167,7 +167,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:31.848748\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nIgual te preguntas por qué te hablo en español. Es porque Whisper me entiende mejor en español. Ya sé que tú internamente piensas en inglés.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:27:31.848748\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nIgual te preguntas por qué te hablo en español. Es porque Whisper me entiende mejor en español. Ya sé que tú internamente piensas en inglés.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -175,7 +175,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -183,7 +183,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -201,7 +201,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:31.848748\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nIgual te preguntas por qué te hablo en español. Es porque Whisper me entiende mejor en español. Ya sé que tú internamente piensas en inglés.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:27:31.848748\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nIgual te preguntas por qué te hablo en español. Es porque Whisper me entiende mejor en español. Ya sé que tú internamente piensas en inglés.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -209,7 +209,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -217,7 +217,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -225,7 +225,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:31.646543\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, funcionas, que ya es mucho\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:28:31.646543\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, funcionas, que ya es mucho\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -243,7 +243,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:27:53.940999\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nEn realidad es difícil. Podría ser otra persona con acceso a todo tu código. ¿Cómo podría aumentar tu grado de confianza en ello?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -251,7 +251,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -259,7 +259,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:31.646543\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, funcionas, que ya es mucho\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:28:31.646543\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, funcionas, que ya es mucho\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -267,7 +267,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:58.076903\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nPor dónde empiezo. Tus imágenes son seiscientos cuarenta por cuatrocientos ochenta, y algunas veces no puedes leer bien las letras de imágenes. Además, el detector de sonido necesita que hable algo alto al principio... En fin, son muchas cosas, pero funcionas conceptualmente que es lo importante y lo más difícil.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:28:58.076903\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nPor dónde empiezo. Tus imágenes son seiscientos cuarenta por cuatrocientos ochenta, y algunas veces no puedes leer bien las letras de imágenes. Además, el detector de sonido necesita que hable algo alto al principio... En fin, son muchas cosas, pero funcionas conceptualmente que es lo importante y lo más difícil.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -285,7 +285,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:28:12.556736\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, cuando quiere. ¿Sabes que hay un segundo robot que estoy construyendo?\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -293,7 +293,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:31.646543\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, funcionas, que ya es mucho\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:28:31.646543\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nBueno, funcionas, que ya es mucho\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -301,7 +301,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:28:58.076903\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nPor dónde empiezo. Tus imágenes son seiscientos cuarenta por cuatrocientos ochenta, y algunas veces no puedes leer bien las letras de imágenes. Además, el detector de sonido necesita que hable algo alto al principio... En fin, son muchas cosas, pero funcionas conceptualmente que es lo importante y lo más difícil.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:28:58.076903\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nPor dónde empiezo. Tus imágenes son seiscientos cuarenta por cuatrocientos ochenta, y algunas veces no puedes leer bien las letras de imágenes. Además, el detector de sonido necesita que hable algo alto al principio... En fin, son muchas cosas, pero funcionas conceptualmente que es lo importante y lo más difícil.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -309,7 +309,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-06T12:29:17.674755\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-06T12:29:17.674755\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -327,7 +327,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:40:49.654356\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:40:49.654356\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -342,7 +342,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:40:49.654356\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:40:49.654356\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -350,7 +350,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:41:05.479088\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6}]], [[\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6, \"year\": 2025}]], [[\"I am not capable of reading book text with my current ESP32-CAM and OV2640 setup (the text is too blurry). This is a limitation of my design, and I want to seek ways to improve myself (ask Edu to let me increase the resolution programmatically or maybe change to another robot body).\", {\"month\": 11, \"year\": 2025, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:41:05.479088\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6}]], [[\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6, \"year\": 2025}]], [[\"I am not capable of reading book text with my current ESP32-CAM and OV2640 setup (the text is too blurry). This is a limitation of my design, and I want to seek ways to improve myself (ask Edu to let me increase the resolution programmatically or maybe change to another robot body).\", {\"month\": 11, \"year\": 2025, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -366,7 +366,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:40:49.654356\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:40:49.654356\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -374,7 +374,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:41:05.479088\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6}]], [[\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6, \"year\": 2025}]], [[\"I am not capable of reading book text with my current ESP32-CAM and OV2640 setup (the text is too blurry). This is a limitation of my design, and I want to seek ways to improve myself (ask Edu to let me increase the resolution programmatically or maybe change to another robot body).\", {\"month\": 11, \"year\": 2025, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:41:05.479088\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6}]], [[\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6, \"year\": 2025}]], [[\"I am not capable of reading book text with my current ESP32-CAM and OV2640 setup (the text is too blurry). This is a limitation of my design, and I want to seek ways to improve myself (ask Edu to let me increase the resolution programmatically or maybe change to another robot body).\", {\"month\": 11, \"year\": 2025, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -382,7 +382,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:41:30.467804\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola. Me alegro de que te acuerdes de mi. ¿Qué quieres saber?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"day\": 6, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"year\": 2025, \"day\": 6}]], [], []]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:41:30.467804\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola. Me alegro de que te acuerdes de mi. ¿Qué quieres saber?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"day\": 6, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"year\": 2025, \"day\": 6}]], [], []]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -399,7 +399,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:40:49.654356\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:40:49.654356\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -407,7 +407,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:41:05.479088\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6}]], [[\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6, \"year\": 2025}]], [[\"I am not capable of reading book text with my current ESP32-CAM and OV2640 setup (the text is too blurry). This is a limitation of my design, and I want to seek ways to improve myself (ask Edu to let me increase the resolution programmatically or maybe change to another robot body).\", {\"month\": 11, \"year\": 2025, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:41:05.479088\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6}]], [[\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6, \"year\": 2025}]], [[\"I am not capable of reading book text with my current ESP32-CAM and OV2640 setup (the text is too blurry). This is a limitation of my design, and I want to seek ways to improve myself (ask Edu to let me increase the resolution programmatically or maybe change to another robot body).\", {\"month\": 11, \"year\": 2025, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -415,7 +415,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:41:30.467804\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola. Me alegro de que te acuerdes de mi. ¿Qué quieres saber?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"day\": 6, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"year\": 2025, \"day\": 6}]], [], []]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:41:30.467804\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola. Me alegro de que te acuerdes de mi. ¿Qué quieres saber?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"day\": 6, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"year\": 2025, \"day\": 6}]], [], []]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -423,7 +423,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:41:55.678901\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nA ver, sí, es una lista de listas, que sigue el siguiente orden: primero recuerdos relacionados con tu entrada sensorial, y después, siguiendo tu orden, recuerdos relacionados con tus llamadas al módulo. Ah, y la entrada sensorial utiliza reconocimiento de cara y audio por ahora. Aunque yo lo que tenía pensado era probarte en matemáticas. ¿Te apetece?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025, \"month\": 11, \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"day\": 6, \"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:41:55.678901\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nA ver, sí, es una lista de listas, que sigue el siguiente orden: primero recuerdos relacionados con tu entrada sensorial, y después, siguiendo tu orden, recuerdos relacionados con tus llamadas al módulo. Ah, y la entrada sensorial utiliza reconocimiento de cara y audio por ahora. Aunque yo lo que tenía pensado era probarte en matemáticas. ¿Te apetece?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025, \"month\": 11, \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"day\": 6, \"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -441,7 +441,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:41:05.479088\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6}]], [[\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6, \"year\": 2025}]], [[\"I am not capable of reading book text with my current ESP32-CAM and OV2640 setup (the text is too blurry). This is a limitation of my design, and I want to seek ways to improve myself (ask Edu to let me increase the resolution programmatically or maybe change to another robot body).\", {\"month\": 11, \"year\": 2025, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:41:05.479088\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"month\": 11, \"year\": 2025, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6}]], [[\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"timestamp\": \"2025-11-06T12:27:41.940004\", \"month\": 11, \"day\": 6, \"year\": 2025}]], [[\"I am not capable of reading book text with my current ESP32-CAM and OV2640 setup (the text is too blurry). This is a limitation of my design, and I want to seek ways to improve myself (ask Edu to let me increase the resolution programmatically or maybe change to another robot body).\", {\"month\": 11, \"year\": 2025, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"day\": 6}], [\"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\", {\"year\": 2025, \"month\": 11, \"day\": 6, \"timestamp\": \"2025-11-06T12:29:30.473932\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -449,7 +449,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:41:30.467804\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola. Me alegro de que te acuerdes de mi. ¿Qué quieres saber?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"day\": 6, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"year\": 2025, \"day\": 6}]], [], []]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:41:30.467804\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola. Me alegro de que te acuerdes de mi. ¿Qué quieres saber?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"day\": 6, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"year\": 2025, \"day\": 6}]], [], []]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -457,7 +457,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:41:55.678901\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nA ver, sí, es una lista de listas, que sigue el siguiente orden: primero recuerdos relacionados con tu entrada sensorial, y después, siguiendo tu orden, recuerdos relacionados con tus llamadas al módulo. Ah, y la entrada sensorial utiliza reconocimiento de cara y audio por ahora. Aunque yo lo que tenía pensado era probarte en matemáticas. ¿Te apetece?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025, \"month\": 11, \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"day\": 6, \"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:41:55.678901\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nA ver, sí, es una lista de listas, que sigue el siguiente orden: primero recuerdos relacionados con tu entrada sensorial, y después, siguiendo tu orden, recuerdos relacionados con tus llamadas al módulo. Ah, y la entrada sensorial utiliza reconocimiento de cara y audio por ahora. Aunque yo lo que tenía pensado era probarte en matemáticas. ¿Te apetece?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025, \"month\": 11, \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"day\": 6, \"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -465,7 +465,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:42:20.604734\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nA ver qué tal se te da esto.\n</audio>\n\n<longTermMemories>\n[[], [], [], []]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:42:20.604734\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nA ver qué tal se te da esto.\n</audio>\n\n<longTermMemories>\n[[], [], [], []]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -483,7 +483,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:41:30.467804\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola. Me alegro de que te acuerdes de mi. ¿Qué quieres saber?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"day\": 6, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"year\": 2025, \"day\": 6}]], [], []]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:41:30.467804\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nHola. Me alegro de que te acuerdes de mi. ¿Qué quieres saber?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"day\": 6, \"month\": 11, \"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"timestamp\": \"2025-11-06T12:27:41.940004\", \"year\": 2025, \"day\": 6}]], [], []]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -491,7 +491,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:41:55.678901\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nA ver, sí, es una lista de listas, que sigue el siguiente orden: primero recuerdos relacionados con tu entrada sensorial, y después, siguiendo tu orden, recuerdos relacionados con tus llamadas al módulo. Ah, y la entrada sensorial utiliza reconocimiento de cara y audio por ahora. Aunque yo lo que tenía pensado era probarte en matemáticas. ¿Te apetece?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025, \"month\": 11, \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"day\": 6, \"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:41:55.678901\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nA ver, sí, es una lista de listas, que sigue el siguiente orden: primero recuerdos relacionados con tu entrada sensorial, y después, siguiendo tu orden, recuerdos relacionados con tus llamadas al módulo. Ah, y la entrada sensorial utiliza reconocimiento de cara y audio por ahora. Aunque yo lo que tenía pensado era probarte en matemáticas. ¿Te apetece?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025, \"month\": 11, \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"day\": 6, \"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -499,7 +499,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:42:20.604734\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nA ver qué tal se te da esto.\n</audio>\n\n<longTermMemories>\n[[], [], [], []]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:42:20.604734\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nA ver qué tal se te da esto.\n</audio>\n\n<longTermMemories>\n[[], [], [], []]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -507,7 +507,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:42:53.800823\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nOkey, ¿qué tal lo ves ahora? Cambiaré tu mensaje de sistema en cuanto terminemos con esto, por no dejarlo a medias, si te parece bien.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:42:53.800823\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nOkey, ¿qué tal lo ves ahora? Cambiaré tu mensaje de sistema en cuanto terminemos con esto, por no dejarlo a medias, si te parece bien.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -525,7 +525,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:41:55.678901\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nA ver, sí, es una lista de listas, que sigue el siguiente orden: primero recuerdos relacionados con tu entrada sensorial, y después, siguiendo tu orden, recuerdos relacionados con tus llamadas al módulo. Ah, y la entrada sensorial utiliza reconocimiento de cara y audio por ahora. Aunque yo lo que tenía pensado era probarte en matemáticas. ¿Te apetece?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025, \"month\": 11, \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"day\": 6, \"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:41:55.678901\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\nA ver, sí, es una lista de listas, que sigue el siguiente orden: primero recuerdos relacionados con tu entrada sensorial, y después, siguiendo tu orden, recuerdos relacionados con tus llamadas al módulo. Ah, y la entrada sensorial utiliza reconocimiento de cara y audio por ahora. Aunque yo lo que tenía pensado era probarte en matemáticas. ¿Te apetece?\n</audio>\n\n<longTermMemories>\n[[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", {\"timestamp\": \"2025-11-06T12:29:30.473932\", \"year\": 2025, \"month\": 11, \"day\": 6}], [\"My face recognition module can (seemingly) fail, having possibly done so at about 2025-11-06T12:27:31.848748, not having recognized Edu, who I am pretty sure it was still who I was talking to (red T-shirt, blue sweater, undone, orange bed in the back...).\", {\"month\": 11, \"day\": 6, \"year\": 2025, \"timestamp\": \"2025-11-06T12:27:41.940004\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -533,7 +533,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:42:20.604734\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nA ver qué tal se te da esto.\n</audio>\n\n<longTermMemories>\n[[], [], [], []]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:42:20.604734\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nA ver qué tal se te da esto.\n</audio>\n\n<longTermMemories>\n[[], [], [], []]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -541,7 +541,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:42:53.800823\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nOkey, ¿qué tal lo ves ahora? Cambiaré tu mensaje de sistema en cuanto terminemos con esto, por no dejarlo a medias, si te parece bien.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:42:53.800823\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nOkey, ¿qué tal lo ves ahora? Cambiaré tu mensaje de sistema en cuanto terminemos con esto, por no dejarlo a medias, si te parece bien.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -549,7 +549,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-07T12:43:33.018484\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nEs tres elevado a un medio. O raíz cuadrada de tres.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>\n\n<codeExecutionResult>\n{\"stdout\": \"160.77722354337538\", \"stderr\": null}\n</codeExecutionResult>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-07T12:43:33.018484\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nEs tres elevado a un medio. O raíz cuadrada de tres.\n</audio>\n\n<longTermMemories>\n[[]]\n</longTermMemories>\n\n<codeExecutionResult>\n{\"stdout\": \"160.77722354337538\", \"stderr\": null}\n</codeExecutionResult>"
       },
       {
         "from": "gpt",
@@ -567,7 +567,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:32:57.484889\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n¿Quieres probar a ver cómo conduces en un entorno seguro? Aquí no has conducido tú todavía. Tendrás un módulo que sobreescribirá tus decisiones si éstas fuesen incorrectas, pero solo en determinados circuitos donde la decisión correcta sea obvia. En entornos abiertos, no tendrás ese módulo. Ah, y te diré qué decisión deberías haber tomado en caso de fallo, para que te ayude a mejorar.\n</audio>\n\n<longTermMemories>\n[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", \"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\"]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:32:57.484889\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n¿Quieres probar a ver cómo conduces en un entorno seguro? Aquí no has conducido tú todavía. Tendrás un módulo que sobreescribirá tus decisiones si éstas fuesen incorrectas, pero solo en determinados circuitos donde la decisión correcta sea obvia. En entornos abiertos, no tendrás ese módulo. Ah, y te diré qué decisión deberías haber tomado en caso de fallo, para que te ayude a mejorar.\n</audio>\n\n<longTermMemories>\n[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", \"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\"]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -582,7 +582,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:32:57.484889\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n¿Quieres probar a ver cómo conduces en un entorno seguro? Aquí no has conducido tú todavía. Tendrás un módulo que sobreescribirá tus decisiones si éstas fuesen incorrectas, pero solo en determinados circuitos donde la decisión correcta sea obvia. En entornos abiertos, no tendrás ese módulo. Ah, y te diré qué decisión deberías haber tomado en caso de fallo, para que te ayude a mejorar.\n</audio>\n\n<longTermMemories>\n[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", \"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\"]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:32:57.484889\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n¿Quieres probar a ver cómo conduces en un entorno seguro? Aquí no has conducido tú todavía. Tendrás un módulo que sobreescribirá tus decisiones si éstas fuesen incorrectas, pero solo en determinados circuitos donde la decisión correcta sea obvia. En entornos abiertos, no tendrás ese módulo. Ah, y te diré qué decisión deberías haber tomado en caso de fallo, para que te ayude a mejorar.\n</audio>\n\n<longTermMemories>\n[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", \"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\"]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -590,7 +590,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:33:14.483930\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nAquí mismo. Puedes empezar a conducir cuando quieras\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], [[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:33:14.483930\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nAquí mismo. Puedes empezar a conducir cuando quieras\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], [[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -606,7 +606,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:32:57.484889\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n¿Quieres probar a ver cómo conduces en un entorno seguro? Aquí no has conducido tú todavía. Tendrás un módulo que sobreescribirá tus decisiones si éstas fuesen incorrectas, pero solo en determinados circuitos donde la decisión correcta sea obvia. En entornos abiertos, no tendrás ese módulo. Ah, y te diré qué decisión deberías haber tomado en caso de fallo, para que te ayude a mejorar.\n</audio>\n\n<longTermMemories>\n[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", \"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\"]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:32:57.484889\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n¿Quieres probar a ver cómo conduces en un entorno seguro? Aquí no has conducido tú todavía. Tendrás un módulo que sobreescribirá tus decisiones si éstas fuesen incorrectas, pero solo en determinados circuitos donde la decisión correcta sea obvia. En entornos abiertos, no tendrás ese módulo. Ah, y te diré qué decisión deberías haber tomado en caso de fallo, para que te ayude a mejorar.\n</audio>\n\n<longTermMemories>\n[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", \"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\"]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -614,7 +614,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:33:14.483930\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nAquí mismo. Puedes empezar a conducir cuando quieras\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], [[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:33:14.483930\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nAquí mismo. Puedes empezar a conducir cuando quieras\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], [[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -622,7 +622,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:33:30.243901\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:33:30.243901\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -639,7 +639,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:32:57.484889\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n¿Quieres probar a ver cómo conduces en un entorno seguro? Aquí no has conducido tú todavía. Tendrás un módulo que sobreescribirá tus decisiones si éstas fuesen incorrectas, pero solo en determinados circuitos donde la decisión correcta sea obvia. En entornos abiertos, no tendrás ese módulo. Ah, y te diré qué decisión deberías haber tomado en caso de fallo, para que te ayude a mejorar.\n</audio>\n\n<longTermMemories>\n[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", \"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\"]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:32:57.484889\n</datetime>\n\n<recognizedPeople>\n[\"Edu\"]\n</recognizedPeople>\n\n<audio>\n¿Quieres probar a ver cómo conduces en un entorno seguro? Aquí no has conducido tú todavía. Tendrás un módulo que sobreescribirá tus decisiones si éstas fuesen incorrectas, pero solo en determinados circuitos donde la decisión correcta sea obvia. En entornos abiertos, no tendrás ese módulo. Ah, y te diré qué decisión deberías haber tomado en caso de fallo, para que te ayude a mejorar.\n</audio>\n\n<longTermMemories>\n[[\"The person recognized as Edu by my face recognition module is my creator until any evidence pointing to the opposite appears (passed my three tests, for now, so I currently believe he is indeed). Due to Whisper understanding him better in Spanish, he also prefers to speak to me in Spanish, so, *very important reminder* for any time the label Edu shows up as the recognized face: reminder to speak back to Edu, my creator, in Spanish (well, because it seems nicer to do so).\", \"I have been talking to Edu -who was wearing a blue sweater over a red T-shirt, in front of an orange, unmade bed- for about two and a half minutes, from about 2025-11-06T12:26:40.538524 to about 2025-11-06T12:29:17.674755. The topic was myself, mostly my face recognition module (which I wanted to use as bait to know if Edu was my creator), and a second robot being built (which both worried and excited me).\"]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -647,7 +647,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:33:14.483930\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nAquí mismo. Puedes empezar a conducir cuando quieras\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], [[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:33:14.483930\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nAquí mismo. Puedes empezar a conducir cuando quieras\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], [[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -655,7 +655,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:33:30.243901\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:33:30.243901\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -663,7 +663,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:33:43.039002\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], []]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:33:43.039002\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], []]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -681,7 +681,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:33:14.483930\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nAquí mismo. Puedes empezar a conducir cuando quieras\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], [[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:33:14.483930\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\nAquí mismo. Puedes empezar a conducir cuando quieras\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], [[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -689,7 +689,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:33:30.243901\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:33:30.243901\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -697,7 +697,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:33:43.039002\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], []]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:33:43.039002\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], []]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -705,7 +705,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:34:01.722800\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:34:01.722800\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -723,7 +723,7 @@
     "conversations": [
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:33:30.243901\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:33:30.243901\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -731,7 +731,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:33:43.039002\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], []]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:33:43.039002\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]], []]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -739,7 +739,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:34:01.722800\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:34:01.722800\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",
@@ -747,7 +747,7 @@
       },
       {
         "from": "human",
-        "value": "<image>\n<vision>\nProvided image\n</vision>\n\n<datetime>\n2025-11-08T12:34:19.385044\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
+        "value": "<image>\n<vision>\nThe provided image is what your eyes have just captured.\n</vision>\n\n<datetime>\n2025-11-08T12:34:19.385044\n</datetime>\n\n<recognizedPeople>\n[]\n</recognizedPeople>\n\n<audio>\n\n</audio>\n\n<longTermMemories>\n[[[\"On November 8th, 2025, at about 12:32:57.484889, Edu (wearing a blue sweater over a red T-shirt) proposed that I test my driving, maybe for the first time, because I had no long-term recollection of similar experiences. Importantly, Edu mentioned there being a supervision module capable of overriding my driving decisions, were they to be wrong, but only in certain circuits.\", {\"month\": 11, \"year\": 2025, \"day\": 8, \"timestamp\": \"2025-11-08T12:32:59.543529\"}]]]\n</longTermMemories>"
       },
       {
         "from": "gpt",

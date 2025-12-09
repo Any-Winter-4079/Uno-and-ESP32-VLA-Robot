@@ -26,7 +26,7 @@ DEEPFACE_BACKENDS = [
     "mediapipe",
     "yolov8",
     "yunet",
-    "fastmtcnn",
+    # "fastmtcnn",
 ]
 
 # Models are used to perform face recognition (i.e., name-match) on the cropped faces detected by the backend;
@@ -59,7 +59,7 @@ TEST_IMAGES_PATH = "2_test_images"
 DEEPFACE_DATABASE_PATH = "2_database"
 
 # Default threshold information (for reference)
-THRESHOLD = 0.3 # distances < this threshold will be returned from the find function
+THRESHOLD = 0.325 # distances < this threshold will be returned from the find function
 # Lower values risk false negatives. High values risk getting false positives.
 # Different metrics/models need different thresholds
 # Defaults are:
@@ -77,7 +77,7 @@ THRESHOLD = 0.3 # distances < this threshold will be returned from the find func
 
 # Active testing configuration
 DEEPFACE_MODEL = DEEPFACE_MODELS[2]     # set a new model, then run the script
-DEEPFACE_BACKEND = DEEPFACE_BACKENDS[7] # fastmtcnn for plot_recognition_times(), elsewhere the code loops all backends
+DEEPFACE_BACKEND = DEEPFACE_BACKENDS[6] # fastmtcnn for plot_recognition_times(), elsewhere the code loops all backends
 DISTANCE_METRIC = DISTANCE_METRICS[0]   # cosine distance
 
 #######################################
@@ -229,7 +229,7 @@ def test_backends():
         use_secondary_y_axis_for_time=False,
         title=f"Recognition performance for {DEEPFACE_MODEL} and {DISTANCE_METRIC}",
         y_label="Number of correct predictions",
-        y_max=max(n_to_identify, n_to_not_identify)
+        y_max=max(n_to_identify, n_to_not_identify)+1
     )
 
     plot_backend_comparison(
@@ -240,7 +240,7 @@ def test_backends():
         use_secondary_y_axis_for_time=False,
         title=f"Counts per image type for {DEEPFACE_MODEL} and {DISTANCE_METRIC}",
         y_label="Counts",
-        y_max=max(type_counts.values())
+        y_max=max(type_counts.values())+1
     )
 
     # print summary results

@@ -21,7 +21,7 @@ DEEPFACE_BACKENDS = [
     "mediapipe",
     "yolov8",
     "yunet",
-    "fastmtcnn",
+    # "fastmtcnn",
 ]
 
 # Models are used to perform face recognition (i.e., name-match) on the cropped faces detected by the backend;
@@ -73,7 +73,7 @@ THRESHOLD = None # default
 
 # Active testing configuration
 DEEPFACE_MODEL = DEEPFACE_MODELS[0]     # set a new model, then run the script
-DEEPFACE_BACKEND = DEEPFACE_BACKENDS[7] # fastmtcnn for plot_recognition_times(), elsewhere the code loops all backends
+DEEPFACE_BACKEND = DEEPFACE_BACKENDS[6] # fastmtcnn for plot_recognition_times(), elsewhere the code loops all backends
 DISTANCE_METRIC = DISTANCE_METRICS[0]   # cosine distance
 
 ##############################################

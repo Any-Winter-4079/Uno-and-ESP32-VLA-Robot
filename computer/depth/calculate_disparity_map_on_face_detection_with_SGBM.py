@@ -6,7 +6,12 @@ import cv2
 import time
 import numpy as np
 from calibration.store_images_to_calibrate import update_camera_config
-from depth.calculate_depth_with_depth_anything import get_stereo_images, rectify_left_image, rectify_right_image
+from depth.calculate_depth_with_depth_anything import (
+   STEREO_MAPS_DIR,
+   get_stereo_images,
+   rectify_left_image,
+   rectify_right_image
+)
 
 #################
 # Configuration #
@@ -30,15 +35,14 @@ PRE_FILTER_CAP = 0                                                # pre-filter i
 DISP12MAX_DIFF = 32                                               # max allowed disparity difference between left-right checks
 
 # camera endpoints
-esp32_right_image_url = f"http://{RIGHT_EYE_IP}/image.jpg"
-esp32_left_image_url = f"http://{LEFT_EYE_IP}/image.jpg"
-esp32_left_config_url = f"http://{LEFT_EYE_IP}/camera_config"
-esp32_right_config_url = f"http://{RIGHT_EYE_IP}/camera_config"
+ESP32_RIGHT_IMAGE_URL = f"http://{RIGHT_EYE_IP}/image.jpg"
+ESP32_LEFT_IMAGE_URL = f"http://{LEFT_EYE_IP}/image.jpg"
+ESP32_LEFT_CONFIG_URL = f"http://{LEFT_EYE_IP}/camera_config"
+ESP32_RIGHT_CONFIG_URL = f"http://{RIGHT_EYE_IP}/camera_config"
 
 # load stereo calibration maps
 # NOTE: run computer/undistortion_and_rectification/undistort_and_rectify.py first
-stereo_maps_dir = "../undistortion_and_rectification/stereo_maps"
-Q = np.load(join(stereo_maps_dir, "Q.npy"))                       # reprojection matrix (disparity -> 3D points)
+Q = np.load(join(STEREO_MAPS_DIR, "Q.npy"))                       # reprojection matrix (disparity -> 3D points)
 
 # reference: https://learnopencv.com/depth-perception-using-stereo-camera-python-c/
 
@@ -181,8 +185,8 @@ def main():
    ################################################
    # Update each ESP32-CAM frame quality and size #
    ################################################
-   update_camera_config(esp32_left_config_url, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
-   update_camera_config(esp32_right_config_url, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
+   update_camera_config(ESP32_LEFT_CONFIG_URL, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
+   update_camera_config(ESP32_RIGHT_CONFIG_URL, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
 
    while True:
       ####################################
@@ -192,8 +196,8 @@ def main():
          print("main: stream is being recovered")
          # if the cameras ever restart and that is the reason why we can't reach them, they will lose our camera
          # config, so send it again (hoping they come back to life)
-         update_camera_config(esp32_left_config_url, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
-         update_camera_config(esp32_right_config_url, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
+         update_camera_config(ESP32_LEFT_CONFIG_URL, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
+         update_camera_config(ESP32_RIGHT_CONFIG_URL, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
          # for now, we assume they don't need recovery, and give them a chance, calling get_stereo_images;
          # if it fails, it'll be switched back to True and we will try to send the config once more
          stream_to_recover = False
@@ -203,7 +207,7 @@ def main():
       ##################################
       # Fetch images from both cameras #
       ##################################
-      left_eye_image, right_eye_image = get_stereo_images(esp32_left_image_url, esp32_right_image_url)
+      left_eye_image, right_eye_image = get_stereo_images(ESP32_LEFT_IMAGE_URL, ESP32_RIGHT_IMAGE_URL)
 
       #####################################################################
       # Rectify both (since we need both) images; else, mark for recovery #

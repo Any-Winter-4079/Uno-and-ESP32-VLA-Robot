@@ -33,10 +33,11 @@ JPEG_QUALITY = 12                # 0-63 (lower means higher quality)
 FRAME_SIZE = "FRAMESIZE_VGA"     # 640x480 resolution
 ```
 
-- And in this line, the timeout setting:
+- And in these lines, the timeout settings:
 
 ```
 STREAM_TIMEOUT = 3               # seconds
+CONFIG_TIMEOUT = 5               # seconds
 ```
 
 - Clone the [Depth Anything repository](https://github.com/LiheYoung/Depth-Anything) inside the `depth` folder (if you want to match this project, using commit `1d03336771fe09c5398ffdd211441e33941a97dc`)

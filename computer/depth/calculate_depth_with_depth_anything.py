@@ -23,18 +23,18 @@ STREAM_TIMEOUT = 3                                                  # seconds
 CONFIG_TIMEOUT = 5                                                  # seconds
 
 # camera endpoints
-esp32_right_image_url = f"http://{RIGHT_EYE_IP}/image.jpg"
-esp32_left_image_url = f"http://{LEFT_EYE_IP}/image.jpg"
-esp32_left_config_url = f"http://{LEFT_EYE_IP}/camera_config"
-esp32_right_config_url = f"http://{RIGHT_EYE_IP}/camera_config"
+ESP32_RIGHT_IMAGE_URL = f"http://{RIGHT_EYE_IP}/image.jpg"
+ESP32_LEFT_IMAGE_URL = f"http://{LEFT_EYE_IP}/image.jpg"
+ESP32_LEFT_CONFIG_URL = f"http://{LEFT_EYE_IP}/camera_config"
+ESP32_RIGHT_CONFIG_URL = f"http://{RIGHT_EYE_IP}/camera_config"
 
 # load stereo calibration maps
 # NOTE: run computer/undistortion_and_rectification/undistort_and_rectify.py first
-stereo_maps_dir = "../undistortion_and_rectification/stereo_maps"
-stereoMapL_x = np.load(join(stereo_maps_dir, "stereoMapL_x.npy"))   # left-eye map for x-coordinate rectification
-stereoMapL_y = np.load(join(stereo_maps_dir, "stereoMapL_y.npy"))   # left-eye map for y-coordinate rectification
-stereoMapR_x = np.load(join(stereo_maps_dir, "stereoMapR_x.npy"))   # right-eye map for x-coordinate rectification
-stereoMapR_y = np.load(join(stereo_maps_dir, "stereoMapR_y.npy"))   # right-eye map for y-coordinate rectification
+STEREO_MAPS_DIR = "../undistortion_and_rectification/stereo_maps"
+STEREO_MAP_L_X = np.load(join(STEREO_MAPS_DIR, "stereoMapL_x.npy"))   # left-eye map for x-coordinate rectification
+STEREO_MAP_L_Y = np.load(join(STEREO_MAPS_DIR, "stereoMapL_y.npy"))   # left-eye map for y-coordinate rectification
+STEREO_MAP_R_X = np.load(join(STEREO_MAPS_DIR, "stereoMapR_x.npy"))   # right-eye map for x-coordinate rectification
+STEREO_MAP_R_Y = np.load(join(STEREO_MAPS_DIR, "stereoMapR_y.npy"))   # right-eye map for y-coordinate rectification
 
 ######################################
 # Helper 1: fetch image with timeout #
@@ -76,15 +76,15 @@ def get_stereo_images(url_left, url_right):
 ################################
 # Helper 3: rectify left image #
 ################################
-def rectify_left_image(image):
-    image_rectified = cv2.remap(image, stereoMapL_x, stereoMapL_y, cv2.INTER_LINEAR)
+def rectify_left_image(image, stereo_map_L_x=STEREO_MAP_L_X, stereo_map_L_y=STEREO_MAP_L_Y):
+    image_rectified = cv2.remap(image, stereo_map_L_x, stereo_map_L_y, cv2.INTER_LINEAR)
     return image_rectified
 
 #################################
 # Helper 4: rectify right image #
 #################################
-def rectify_right_image(image):
-    image_rectified = cv2.remap(image, stereoMapR_x, stereoMapR_y, cv2.INTER_LINEAR)
+def rectify_right_image(image, stereo_map_R_x=STEREO_MAP_R_X, stereo_map_R_y=STEREO_MAP_R_Y):
+    image_rectified = cv2.remap(image, stereo_map_R_x, stereo_map_R_y, cv2.INTER_LINEAR)
     return image_rectified
 
 #############################################
@@ -103,8 +103,8 @@ def main():
     ################################################
     # Update each ESP32-CAM frame quality and size #
     ################################################
-    update_camera_config(esp32_left_config_url, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
-    update_camera_config(esp32_right_config_url, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
+    update_camera_config(ESP32_LEFT_CONFIG_URL, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
+    update_camera_config(ESP32_RIGHT_CONFIG_URL, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
 
     while True:
         ####################################
@@ -114,8 +114,8 @@ def main():
             print("main: stream is being recovered")
             # if the cameras ever restart and that is the reason why we can't reach them, they will lose our camera
             # config, so send it again (hoping they come back to life)
-            update_camera_config(esp32_left_config_url, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
-            update_camera_config(esp32_right_config_url, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
+            update_camera_config(ESP32_LEFT_CONFIG_URL, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
+            update_camera_config(ESP32_RIGHT_CONFIG_URL, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
             # for now, we asume they don't need recovery, and give them a chance, calling get_stereo_images;
             # if it fails, it'll be switched back to True and we will try to send the config once more
             stream_to_recover = False
@@ -125,7 +125,7 @@ def main():
         ##################################
         # Fetch images from both cameras #
         ##################################
-        left_eye_image, right_eye_image = get_stereo_images(esp32_left_image_url, esp32_right_image_url)
+        left_eye_image, right_eye_image = get_stereo_images(ESP32_LEFT_IMAGE_URL, ESP32_RIGHT_IMAGE_URL)
 
         ######################################################################################
         # Rectify right image (preferrably), and if not, left image; else, mark for recovery #

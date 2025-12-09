@@ -173,7 +173,6 @@ def test_backends():
         identification_type = "_".join(test_image_file.split("_")[-4:-2])
         if identification_type in type_counts:
             type_counts[identification_type] += 1
-    print(f"n_to_identify {n_to_identify}, n_to_not_identify {n_to_not_identify}, identification_type {type_counts}")
     
     # build model
     DeepFace.build_model(DEEPFACE_MODEL)

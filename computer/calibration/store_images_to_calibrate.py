@@ -39,11 +39,11 @@ SECONDS_BETWEEN_IMAGE_CAPTURES = 3  # time to press 's' (before a new pair of fr
 ##################################
 # Helper 1: Update camera config #
 ##################################
-def update_camera_config(esp32_config_url, jpeg_quality, frame_size):
+def update_camera_config(esp32_config_url, jpeg_quality, frame_size, timeout=CONFIG_TIMEOUT):
     data = {"jpeg_quality": jpeg_quality, "frame_size": frame_size}
     headers = {"Content-Type": "application/x-www-form-urlencoded"}
     try:
-        response = requests.post(esp32_config_url, data=data, headers=headers, timeout=CONFIG_TIMEOUT)
+        response = requests.post(esp32_config_url, data=data, headers=headers, timeout=timeout)
         print(f"update_camera_config: response from ESP32-CAM: {response.text}")
         return True
     except Exception as e:

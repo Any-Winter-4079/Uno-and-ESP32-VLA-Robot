@@ -17,6 +17,7 @@ FRAME_SIZE = "FRAMESIZE_VGA"                                      # 640x480 reso
 USE_HOTSPOT = True                                                # True for phone hotspot, False for home WiFi
 RIGHT_EYE_IP = "172.20.10.10" if USE_HOTSPOT else "192.168.1.180" # ESP32-CAM right eye IP
 LEFT_EYE_IP = "172.20.10.11" if USE_HOTSPOT else "192.168.1.181"  # ESP32-CAM left eye IP
+CONFIG_TIMEOUT = 5                                                # seconds
 
 STEREO_BLOCK_SIZE = 11                                            # matching block size (must be odd)
 MIN_DISPARITY = 0                                                 # minimum disparity value
@@ -132,7 +133,7 @@ def get_face_centroid(face_detector, image):
 #######################################
 # Helper 11: Calculate disparity maps #
 #######################################
-def calculate_disparity_maps(left_image_rectified, right_image_rectified):
+def calculate_disparity_maps(left_image_rectified, right_image_rectified, q=Q):
    # convert to grayscale
    left_gray = cv2.cvtColor(left_image_rectified, cv2.COLOR_BGR2GRAY)
    right_gray = cv2.cvtColor(right_image_rectified, cv2.COLOR_BGR2GRAY)
@@ -144,7 +145,7 @@ def calculate_disparity_maps(left_image_rectified, right_image_rectified):
    norm_disparity = cv2.normalize(disparity, None, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX, dtype=cv2.CV_8U)
 
    # calculate 3D coordinates
-   points_3D = cv2.reprojectImageTo3D(disparity, Q)
+   points_3D = cv2.reprojectImageTo3D(disparity, q)
 
    return norm_disparity, points_3D
 
@@ -180,8 +181,8 @@ def main():
    ################################################
    # Update each ESP32-CAM frame quality and size #
    ################################################
-   update_camera_config(esp32_left_config_url, JPEG_QUALITY, FRAME_SIZE)
-   update_camera_config(esp32_right_config_url, JPEG_QUALITY, FRAME_SIZE)
+   update_camera_config(esp32_left_config_url, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
+   update_camera_config(esp32_right_config_url, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
 
    while True:
       ####################################
@@ -191,8 +192,8 @@ def main():
          print("main: stream is being recovered")
          # if the cameras ever restart and that is the reason why we can't reach them, they will lose our camera
          # config, so send it again (hoping they come back to life)
-         update_camera_config(esp32_left_config_url, JPEG_QUALITY, FRAME_SIZE)
-         update_camera_config(esp32_right_config_url, JPEG_QUALITY, FRAME_SIZE)
+         update_camera_config(esp32_left_config_url, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
+         update_camera_config(esp32_right_config_url, JPEG_QUALITY, FRAME_SIZE, timeout=CONFIG_TIMEOUT)
          # for now, we assume they don't need recovery, and give them a chance, calling get_stereo_images;
          # if it fails, it'll be switched back to True and we will try to send the config once more
          stream_to_recover = False

@@ -167,14 +167,18 @@ def send_stop_recording_upon_same_transcript(ip):
 ###################################################################################################################
 # NOTE: if the request times out, the VLA would run without audio (because the ESP32-WROVER wouldn't send it) for one iteration until
 # LLM/production.py tries calling this function again (which does after every VLA call)
-def allow_recording_when_robot_thinks_and_stays_quiet(ip):
-    esp32_allow_url = f"http://{ip}/{ESP32_WROVER_ALLOW_RECORDING_ENDPOINT}"
+def allow_recording_when_robot_thinks_and_stays_quiet(
+    ip,
+    esp32_wrover_endpoint=ESP32_WROVER_ALLOW_RECORDING_ENDPOINT,
+    timeout=ESP32_REQUEST_TIMEOUT
+    ):
+    esp32_allow_url = f"http://{ip}/{esp32_wrover_endpoint}"
     print(f"allow_recording_when_robot_thinks_and_stays_quiet: sending request to {esp32_allow_url}")
     data = {"allow": "true"}
     headers = {"Content-Type": "application/x-www-form-urlencoded"}
     
     try:
-        response = requests.post(esp32_allow_url, data=data, headers=headers, timeout=ESP32_REQUEST_TIMEOUT)
+        response = requests.post(esp32_allow_url, data=data, headers=headers, timeout=timeout)
         return {"success": True, "message": response.text}
     except requests.RequestException as e:
         return {"success": False, "message": str(e)}

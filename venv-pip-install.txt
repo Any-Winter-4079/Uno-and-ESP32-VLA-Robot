@@ -1,0 +1,5 @@
+pip install torch==2.8.0 torchaudio==2.8.0 torchvision==0.23.0 && \
+pip install tf_keras==2.19.0 tensorflow==2.19.0 tensorflow-macos==2.15.1 tensorflow-metal==1.2.0 requests websockets pydub deepface \
+ultralytics TTS -c tts-constraints.txt openai git+https://github.com/coqui-ai/TTS.git@dev \
+llama_cpp_python==0.2.44 datasets anthropic python-dotenv chromadb \
+mediapipe==0.10.21 modal==1.0.3 soundfile

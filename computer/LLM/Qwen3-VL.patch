@@ -1,7 +1,7 @@
-diff --git a/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/data/__init__.py b/qwenvl/data/__init__.py
+diff --git a/qwen-vl-finetune/qwenvl/data/__init__.py b/qwen-vl-finetune/qwenvl/data/__init__.py
 index 68d3dea..7209385 100755
---- a/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/data/__init__.py
-+++ b/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/data/__init__.py
+--- a/qwen-vl-finetune/qwenvl/data/__init__.py
++++ b/qwen-vl-finetune/qwenvl/data/__init__.py
 @@ -26,12 +26,19 @@ VIDEOCHATGPT = {
      "data_path": "PATH_TO_VIDEOCHATGPT_DATA",
  }
@@ -21,23 +21,24 @@ index 68d3dea..7209385 100755
 +    "vla_sft": VLA_SFT,
  }
  
-diff --git a/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/train/train_qwen.py b/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/train/train_qwen.py
-index f67d569..00c5c56 100644
---- a/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/train/train_qwen.py
-+++ b/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/train/train_qwen.py
+ 
+diff --git a/qwen-vl-finetune/qwenvl/train/train_qwen.py b/qwen-vl-finetune/qwenvl/train/train_qwen.py
+index f67d569..d5cbc0c 100644
+--- a/qwen-vl-finetune/qwenvl/train/train_qwen.py
++++ b/qwen-vl-finetune/qwenvl/train/train_qwen.py
 @@ -138,6 +138,17 @@ def train(attn_implementation="flash_attention_2"):
          model_args.model_name_or_path,
      )
  
 +    try:
-+        print("Loading custom chat template from 'chat_template.jinja'")
++        print("train: loading custom chat template from 'chat_template.jinja'")
 +        with open("/workspace/Qwen3-VL/qwen-vl-finetune/chat_template.jinja", "r") as f:
 +            custom_chat_template = f.read()
 +        processor.chat_template = custom_chat_template
 +        processor.tokenizer.chat_template = custom_chat_template
-+        print("Successfully replaced default chat template with custom template.")
++        print("train: successfully replaced default chat template with custom template")
 +    except Exception as e:
-+        print(f"Error: failed to load custom chat template: {e}")
++        print(f"train: error: failed to load custom chat template: {str(e)}")
 +        sys.exit(1)
 +
      if data_args.data_flatten or data_args.data_packing:

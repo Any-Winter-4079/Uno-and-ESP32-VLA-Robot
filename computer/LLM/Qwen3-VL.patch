@@ -1,0 +1,45 @@
+diff --git a/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/data/__init__.py b/qwenvl/data/__init__.py
+index 68d3dea..7209385 100755
+--- a/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/data/__init__.py
++++ b/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/data/__init__.py
+@@ -26,12 +26,19 @@ VIDEOCHATGPT = {
+     "data_path": "PATH_TO_VIDEOCHATGPT_DATA",
+ }
+ 
++
++VLA_SFT = {
++    "annotation_path": "/workspace/Qwen3-VL/qwen-vl-finetune/demo/image_per_turn.json",
++    "data_path": "/workspace/Qwen3-VL/qwen-vl-finetune/demo/",
++}
++
+ data_dict = {
+     "cambrian_737k": CAMBRIAN_737K,
+     "cambrian_737k_pack": CAMBRIAN_737K_PACK,
+     "mp_doc": MP_DOC,
+     "clevr_mc": CLEVR_MC,
+     "videochatgpt": VIDEOCHATGPT,
++    "vla_sft": VLA_SFT,
+ }
+ 
+diff --git a/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/train/train_qwen.py b/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/train/train_qwen.py
+index f67d569..00c5c56 100644
+--- a/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/train/train_qwen.py
++++ b/workspace/Qwen3-VL/qwen-vl-finetune/qwenvl/train/train_qwen.py
+@@ -138,6 +138,17 @@ def train(attn_implementation="flash_attention_2"):
+         model_args.model_name_or_path,
+     )
+ 
++    try:
++        print("Loading custom chat template from 'chat_template.jinja'")
++        with open("/workspace/Qwen3-VL/qwen-vl-finetune/chat_template.jinja", "r") as f:
++            custom_chat_template = f.read()
++        processor.chat_template = custom_chat_template
++        processor.tokenizer.chat_template = custom_chat_template
++        print("Successfully replaced default chat template with custom template.")
++    except Exception as e:
++        print(f"Error: failed to load custom chat template: {e}")
++        sys.exit(1)
++
+     if data_args.data_flatten or data_args.data_packing:
+         replace_qwen2_vl_attention_class()
+     model.config.use_cache = False

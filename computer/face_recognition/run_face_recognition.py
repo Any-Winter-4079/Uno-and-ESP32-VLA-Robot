@@ -24,7 +24,7 @@ CONFIG_TIMEOUT = 5                                                  # seconds
 
 DEEPFACE_DATABASE_PATH = "production_database"
 DISTANCE_METRIC = "cosine"                                          # "cosine" | "euclidean" | "euclidean_l2"
-DEEPFACE_BACKEND = "fastmtcnn"                                      # detection backend
+DEEPFACE_BACKEND = "mtcnn"                                          # detection backend
 DEEPFACE_MODEL = "VGG-Face"                                         # recognition model
 THRESHOLD = 0.5                                                     # recognition threshold
 

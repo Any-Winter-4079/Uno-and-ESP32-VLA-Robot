@@ -71,7 +71,7 @@ REGULAR_MODEL_PATH = "Qwen/Qwen3-VL-2B-Instruct"                        # non-SF
 MAX_TURNS_PER_QUESTION = 2                                              # this includes multiple attempts at a question and tool calls (e.g., calling a tool one turn and getting the result next turn)
 
 # Model choice
-USE_SFTED_MODEL = False                                                 # True to use the SFTed model, False to use regular Qwen3-VL
+USE_SFTED_MODEL = True                                                 # True to use the SFTed model, False to use regular Qwen3-VL
 
 # Working mode choice
 USE_ROBOT_BEHAVIOR = True                                               # True for robot-style input (<vision>, <audio>, etc.), False for plain text input

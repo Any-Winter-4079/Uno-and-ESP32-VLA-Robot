@@ -61,7 +61,7 @@ REGULAR_MODEL_PATH = "Qwen/Qwen3-VL-4B-Instruct"                       # non-SFT
 MAX_LAPS = 3                                                            # this allows us to measure improvement over several laps
 
 # Model choice
-USE_SFTED_MODEL = False                                                 # True to use the SFTed model, False to use regular Qwen3-VL
+USE_SFTED_MODEL = True                                                 # True to use the SFTed model, False to use regular Qwen3-VL
 
 # Map between L298N commands and wheel actions
 # NOTE: these keys match the file names

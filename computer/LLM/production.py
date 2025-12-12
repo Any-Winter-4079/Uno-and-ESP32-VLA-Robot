@@ -4,32 +4,6 @@ project_root = abspath(dirname(dirname(__file__)))
 sys.path.insert(0, project_root)
 import re
 import modal
-from create_dataset_with_image_per_turn import (
-    # Prepend/append to tags
-    START_TAG_OPENING,
-    START_TAG_CLOSURE,
-    END_TAG_OPENING,
-    END_TAG_CLOSURE,
-    # Robot input tags
-    VISION,
-    DATETIME,
-    OBJECT_DEPTHS,
-    RECOGNIZED_PEOPLE,
-    AUDIO,
-    LONG_TERM_MEMORIES,
-    CODE_EXECUTION_RESULT,
-    WEB_BROWSING_RESULT,
-    OPEN_URL_RESULT,
-    GET_NEXT_CHUNK_RESULT,
-    # Robot output tags
-    INTERNAL_THINKING,
-    BODY_CONTROL,
-    FUNCTION_CALLING,
-    PRIMARY_GOAL,
-    CURRENT_TASK,
-    VISION_DESCRIPTION_SUCCESS,
-    VISION_DESCRIPTION_FAILURE
-)
 
 # modal run production.py
 
@@ -55,7 +29,7 @@ PULL_MEMORIES_K = 5                                                             
 PULL_MEMORIES_L = 3                                                                 # number of latest memories to return, if everything else equal(ish)
 
 # Fine-tuned VLM (could be called VLA, given there are samples to teach it how to control its body in the SFT dataset, albeit reduced in number here)
-VLA_MODEL_PATH = "Edue3r4t5y6/Qwen3-VL-2B-Instruct-SFT-2025-11-11-1225"             # path to model that understands autonomous input/output format
+VLA_MODEL_PATH = "Edue3r4t5y6/Qwen3-VL-2B-Instruct-VLA-2025-12-10-2108"             # path to model that understands autonomous input/output format
 VLA_MODEL_DATE_PATTERN = r'-\d{4}-\d{2}-\d{2}-\d{4}'                                # pattern to match the datetime (e.g., 2025-11-11-1225 for 2025-11-11-12:25)
 VLA_MODEL_NAME = re.split(VLA_MODEL_DATE_PATTERN, VLA_MODEL_PATH.split("/")[-1])[0] # simpler name for system prompt (Qwen3-VL-2B-Instruct-SFT)
 
@@ -69,13 +43,30 @@ TOP_K = 20                                                                      
 # System prompt
 CREATOR_NAME = "Edu"                                                                # put your own name if you want
 
-# Prepend/append to tags                                                            # imported from create_dataset_with_image_per_turn.py
-# START_TAG_OPENING = "<"
-# ...
+# Prepend/append to tags
+START_TAG_OPENING = "<"
+START_TAG_CLOSURE = ">"
+END_TAG_OPENING = "</"
+END_TAG_CLOSURE = ">"
 
-# Robot input tags                                                                  # imported from create_dataset_with_image_per_turn.py
-# VISION = "vision"
-# ...
+# Robot output tags
+INTERNAL_THINKING = "internalThinking"
+BODY_CONTROL = "bodyControl"
+FUNCTION_CALLING = "functionCalling"
+PRIMARY_GOAL = "primaryGoal"
+CURRENT_TASK = "currentTask"
+
+# Robot input tags
+VISION = "vision"
+DATETIME = "datetime"
+OBJECT_DEPTHS = "objectDepths"
+RECOGNIZED_PEOPLE = "recognizedPeople"
+AUDIO = "audio"
+LONG_TERM_MEMORIES = "longTermMemories"
+CODE_EXECUTION_RESULT = "codeExecutionResult"
+WEB_BROWSING_RESULT = "webBrowsingResult"
+OPEN_URL_RESULT = "openURLResult"
+GET_NEXT_CHUNK_RESULT = "getNextChunkResult"
 
 # Function names
 PULL_MEMORIES_FUNCTION_NAME = "pull_memories"
@@ -101,8 +92,9 @@ ALL_OPTIONAL_FUNCTIONS_TO_TAG_MAPPING = {
 }
 
 # Vision descriptions
-# VISION_DESCRIPTION_SUCCESS = "..."                                                # imported from create_dataset_with_image_per_turn.py
-# ...
+CAMERA_ENDPOINT = "/image.jpg"
+VISION_DESCRIPTION_SUCCESS = "The provided image is what your eyes have just captured."
+VISION_DESCRIPTION_FAILURE = f"{CAMERA_ENDPOINT} timeout or error. No image this turn."
 
 # Single turn: input (match tags from QwenVL/Qwen3-VL)
 VLA_INPUT_PROXY = "user"
@@ -413,6 +405,7 @@ image_flash_attention = (
         "torchvision",
         "transformers==4.57.0",
         "accelerate",
+        "peft==0.17.1",
         "Pillow",
         "requests",
         "hf_transfer",
@@ -426,6 +419,7 @@ image_no_flash_attention = (
         "torchvision",
         "transformers==4.57.0",
         "accelerate",
+        "peft==0.17.1",
         "Pillow",
         "requests",
         "hf_transfer",
@@ -730,11 +724,12 @@ def run_vla_or_vlm(
     top_p=TOP_P,
     top_k=TOP_K,
     use_flash_attention_2=USE_FLASH_ATTENTION_IMAGE,
-    return_prompt_text=False,
+    return_prompt_text=False
     ):
     import io
     import torch
     from PIL import Image
+    from peft import AutoPeftModelForCausalLM
     from transformers import Qwen3VLForConditionalGeneration, AutoProcessor
     
     #######################################
@@ -743,12 +738,27 @@ def run_vla_or_vlm(
     if (not hasattr(run_vla_or_vlm, "model")) or (getattr(run_vla_or_vlm, "model_path", None) != model_path):
         print(f"run_vla: loading model from {model_path}...")
         
-        run_vla_or_vlm.model = Qwen3VLForConditionalGeneration.from_pretrained(
-            model_path,
-            dtype="auto",
-            device_map="auto",
-            attn_implementation="sdpa" if not use_flash_attention_2 else "flash_attention_2"
-        )
+        ##################################################################
+        # Model could be LoRA adapter (to load on top of the base model) #
+        ##################################################################
+        try:
+            run_vla_or_vlm.model = AutoPeftModelForCausalLM.from_pretrained(
+                model_path,
+                dtype="auto",
+                device_map="auto",
+                attn_implementation="sdpa" if not use_flash_attention_2 else "flash_attention_2"
+            )
+        #################
+        # Or base model #
+        #################
+        except Exception:
+            run_vla_or_vlm.model = Qwen3VLForConditionalGeneration.from_pretrained(
+                model_path,
+                dtype="auto",
+                device_map="auto",
+                attn_implementation="sdpa" if not use_flash_attention_2 else "flash_attention_2"
+            )
+
         run_vla_or_vlm.processor = AutoProcessor.from_pretrained(model_path)
         run_vla_or_vlm.model_path = model_path
         

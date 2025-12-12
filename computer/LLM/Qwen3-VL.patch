@@ -22,6 +22,43 @@ index 68d3dea..7209385 100755
  }
  
  
+diff --git a/qwen-vl-finetune/qwenvl/data/data_processor.py b/qwen-vl-finetune/qwenvl/data/data_processor.py
+index 8c17bf6..41dee14 100644
+--- a/qwen-vl-finetune/qwenvl/data/data_processor.py
++++ b/qwen-vl-finetune/qwenvl/data/data_processor.py
+@@ -1,3 +1,4 @@
++import os
+ import json
+ import random
+ import logging
+@@ -26,6 +27,7 @@ DEFAULT_VIDEO_TOKEN = "<video>"
+ 
+ local_rank = None
+ 
++PRINT_SFT_PROMPTS = os.environ.get("PRINT_SFT_PROMPTS", "0") == "1"
+ 
+ def rank0_print(*args):
+     if local_rank == 0:
+@@ -438,6 +440,12 @@ class LazySupervisedDataset(Dataset):
+         ]
+         label = self.processor.tokenizer.decode(labels, skip_special_tokens=False)
+ 
++        if PRINT_SFT_PROMPTS:
++            print("#####################")
++            print("# SFT sample prompt #")
++            print("#####################")
++            print(text)
++
+         return data_dict
+ 
+     def _get_packed_item(self, sources) -> Dict[str, torch.Tensor]:
+@@ -691,4 +699,4 @@ def make_supervised_data_module(processor, data_args) -> Dict:
+ 
+ 
+ if __name__ == "__main__":
+-    pass
++    pass
+\ No newline at end of file
 diff --git a/qwen-vl-finetune/qwenvl/train/train_qwen.py b/qwen-vl-finetune/qwenvl/train/train_qwen.py
 index f67d569..d5cbc0c 100644
 --- a/qwen-vl-finetune/qwenvl/train/train_qwen.py

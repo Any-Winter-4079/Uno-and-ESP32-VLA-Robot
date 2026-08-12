@@ -8,11 +8,13 @@
 
 </div>
 
-NOTE:
+NOTES:
 
 - Test demos check if a component works with some pre-defined behavior (e.g., move motors forward for 2 seconds, backward for 2 seconds, turn left for 3 seconds, turn right for 3 seconds).
 
-- Production demos use the full pipeline, and commands come from the fine-tuned vision-language(-action) model.
+- GitHub does not render the slides/thesis very well; you can preview them here, but it's better to download them if you want an accurate version.
+
+- This repo is archived. No further updates are expected.
 
 ## How to Read this Project
 

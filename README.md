@@ -12,7 +12,7 @@ NOTES:
 
 - Test demos check if a component works with some pre-defined behavior (e.g., move motors forward for 2 seconds, backward for 2 seconds, turn left for 3 seconds, turn right for 3 seconds).
 
-- The full thesis is also made available (to be replaced with UPM's OA link once published), but GitHub does not render the slides/thesis very well; you can preview them here, but it's better to download them if you want an accurate version.
+- GitHub does not render the slides very well; you can preview them here, but it's better to download them if you want an accurate version. [Thesis also available](https://oa.upm.es/97910/)
 
 - This repo is archived. No further updates are expected.
 
